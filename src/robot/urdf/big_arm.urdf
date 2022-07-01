@@ -97,8 +97,8 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="0"
-      upper="6.183"
+      lower="-3.14159"
+      upper="3.14159"
       effort="1000"
       velocity="10" />
   </joint>
@@ -156,7 +156,7 @@
       xyz="0 0 1" />
     <limit
       lower="0"
-      upper="6.183"
+      upper="6.31"
       effort="1000"
       velocity="10" />
   </joint>
@@ -446,7 +446,7 @@
       xyz="0 0 1" />
     <limit
       lower="0"
-      upper="6.183"
+      upper="0"
       effort="1000"
       velocity="10" />
   </joint>
@@ -504,7 +504,7 @@
       xyz="0 0 1" />
     <limit
       lower="0"
-      upper="6.183"
+      upper="0"
       effort="1000"
       velocity="10" />
   </joint>
@@ -562,7 +562,7 @@
       xyz="0 0 1" />
     <limit
       lower="0"
-      upper="6.183"
+      upper="0"
       effort="1000"
       velocity="10" />
   </joint>
@@ -620,7 +620,7 @@
       xyz="0 0 1" />
     <limit
       lower="0"
-      upper="6.183"
+      upper="0"
       effort="1000"
       velocity="10" />
   </joint>
@@ -678,7 +678,7 @@
       xyz="0 0 1" />
     <limit
       lower="0"
-      upper="6.183"
+      upper="0"
       effort="1000"
       velocity="10" />
   </joint>
@@ -736,7 +736,7 @@
       xyz="0 0 1" />
     <limit
       lower="0"
-      upper="6.183"
+      upper="0"
       effort="1000"
       velocity="10" />
   </joint>
@@ -794,7 +794,7 @@
       xyz="0 0 1" />
     <limit
       lower="0"
-      upper="6.183"
+      upper="0"
       effort="1000"
       velocity="10" />
   </joint>
@@ -852,8 +852,171 @@
       xyz="0 0 1" />
     <limit
       lower="0"
-      upper="6.183"
+      upper="0"
       effort="1000"
       velocity="10" />
   </joint>
+
+  <!-- GAZEBO REFERENCES FOR BODIES-->
+
+  <gazebo reference="base_link">
+  <selfCollide>true</selfCollide>
+    <mu1>100</mu1>
+    <mu2>100</mu2>
+    <kp>100000000</kp>
+    <kd>1</kd>
+    <material>Gazebo/Orange</material>
+  </gazebo>  
+
+  <gazebo reference="link_1">
+  <selfCollide>true</selfCollide>
+    <mu1>100</mu1>
+    <mu2>100</mu2>
+    <kp>100000000</kp>
+    <kd>1</kd>
+    <material>Gazebo/Orange</material>
+  </gazebo> 
+
+  <gazebo reference="link_2">
+  <selfCollide>true</selfCollide>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>100000000</kp>
+    <kd>0.1</kd>
+    <material>Gazebo/Orange</material>
+  </gazebo> 
+
+  <gazebo reference="link_3">
+  <selfCollide>true</selfCollide>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>100000000</kp>
+    <kd>0.1</kd>
+    <material>Gazebo/Orange</material>
+  </gazebo> 
+
+  <gazebo reference="link_4">
+  <selfCollide>true</selfCollide>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>100000000</kp>
+    <kd>0.1</kd>
+    <material>Gazebo/Orange</material>
+  </gazebo> 
+
+  <gazebo reference="link_5">
+  <selfCollide>true</selfCollide>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>100000000</kp>
+    <kd>0.1</kd>
+    <material>Gazebo/Orange</material>
+  </gazebo> 
+
+  <gazebo reference="link_6">
+  <selfCollide>true</selfCollide>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>100000000</kp>
+    <kd>0.1</kd>
+    <material>Gazebo/Orange</material>
+  </gazebo> 
+
+  <gazebo reference="grip_1">
+  <selfCollide>true</selfCollide>
+    <mu1>100</mu1>
+    <mu2>100</mu2>
+    <kp>100000000</kp>
+    <kd>1</kd>
+    <material>Gazebo/Orange</material>
+  </gazebo> 
+
+  <gazebo reference="grip_1b">
+  <selfCollide>true</selfCollide>
+    <mu1>100</mu1>
+    <mu2>100</mu2>
+    <kp>100000000</kp>
+    <kd>1</kd>
+    <material>Gazebo/Orange</material>
+  </gazebo> 
+
+  <gazebo reference="grip_2">
+  <selfCollide>true</selfCollide>
+    <mu1>100</mu1>
+    <mu2>100</mu2>
+    <kp>100000000</kp>
+    <kd>1</kd>
+    <material>Gazebo/Orange</material>
+  </gazebo> 
+
+  <gazebo reference="grip_2b">
+  <selfCollide>true</selfCollide>
+    <mu1>100</mu1>
+    <mu2>100</mu2>
+    <kp>100000000</kp>
+    <kd>1</kd>
+    <material>Gazebo/Orange</material>
+  </gazebo> 
+
+  <gazebo reference="grip_3">
+  <selfCollide>true</selfCollide>
+    <mu1>100</mu1>
+    <mu2>100</mu2>
+    <kp>100000000</kp>
+    <kd>1</kd>
+    <material>Gazebo/Orange</material>
+  </gazebo> 
+
+  <gazebo reference="grip_3b">
+  <selfCollide>true</selfCollide>
+    <mu1>100</mu1>
+    <mu2>100</mu2>
+    <kp>100000000</kp>
+    <kd>1</kd>
+    <material>Gazebo/Orange</material>
+  </gazebo>
+
+  <gazebo reference="grip_4">
+  <selfCollide>true</selfCollide>
+    <mu1>100</mu1>
+    <mu2>100</mu2>
+    <kp>100000000</kp>
+    <kd>100</kd>
+    <material>Gazebo/Orange</material>
+  </gazebo> 
+
+  <gazebo reference="grip_4b">
+  <selfCollide>true</selfCollide>
+    <mu1>100</mu1>
+    <mu2>100</mu2>
+    <kp>100000000</kp>
+    <kd>100</kd>
+    <material>Gazebo/Orange</material>
+  </gazebo> 
+
+  <!--Use Gazebo Joint State Publisher-->
+
+  <gazebo>
+    <plugin name="gazebo_ros_joint_state_publisher"
+        filename="libgazebo_ros_joint_state_publisher.so">
+        <update_rate>100</update_rate>
+        <joint_name>joint_base_1</joint_name>
+        <joint_name>joint_12</joint_name>
+        <joint_name>joint_23</joint_name>
+        <joint_name>joint_34</joint_name>
+        <joint_name>joint_45</joint_name>
+        <joint_name>joint_56</joint_name>
+        <joint_name>joint_6_g1</joint_name>
+        <!--gripper-->
+        <joint_name>joint_6_g2</joint_name>
+        <joint_name>joint_6_g3</joint_name>
+        <joint_name>joint_6_g4</joint_name>
+        <joint_name>joint_grip_1b</joint_name>
+        <joint_name>joint_grip_2b</joint_name>
+        <joint_name>joint_grip_3b</joint_name>
+        <joint_name>joint_grip_4b</joint_name>
+
+    </plugin>
+  </gazebo>
+
 </robot>

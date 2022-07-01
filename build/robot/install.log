@@ -4,6 +4,7 @@
 /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/package.xml
 /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/urdf/big_arm_urdf.csv
 /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/urdf/big_arm.urdf
+/home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/launch/gazebo.launch.py
 /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/launch/display.launch.py
 /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/meshes/grip_1b.STL
 /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/meshes/grip_4.STL

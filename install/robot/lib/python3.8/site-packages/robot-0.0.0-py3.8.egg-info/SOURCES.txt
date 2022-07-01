@@ -9,6 +9,7 @@ setup.py
 ../../build/robot/robot.egg-info/top_level.txt
 ../../build/robot/robot.egg-info/zip-safe
 launch/display.launch.py
+launch/gazebo.launch.py
 meshes/base_link.STL
 meshes/grip_1.STL
 meshes/grip_1b.STL
