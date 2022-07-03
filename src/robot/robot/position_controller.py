@@ -40,14 +40,24 @@ class ControlActionClient(Node):
         point3 = JointTrajectoryPoint()
         point3.time_from_start = Duration(seconds=10, nanoseconds=0).to_msg()
 
+        point4 = JointTrajectoryPoint()
+        point4.time_from_start = Duration(seconds=15, nanoseconds=0).to_msg()
+
+        point5 = JointTrajectoryPoint()
+        point5.time_from_start = Duration(seconds=22, nanoseconds=0).to_msg()
+
 
         #point2.positions = [angle, angle, -angle, angle, angle/2, angle/2]
         point2.positions = [2.3, -0.5, 1.0, 0.5, 0.3, 1.0]
-        point3.positions = [3.14159, 0.5, 0.0, 0.25, -0.2, 0.5]
+        point3.positions = [3.14159, -1.0, 0.0, 0.25, -0.2, -1.57079]
+        point4.positions = [6.0, 0.0, 0.5, 1.0, 1.0, -1.0]
+        point5.positions = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
 
         points.append(point1)
         points.append(point2)
         points.append(point3)
+        points.append(point4)
+        points.append(point5)
 
         goal_msg.goal_time_tolerance = Duration(seconds=20, nanoseconds=0).to_msg()
         goal_msg.trajectory.joint_names = joint_names
@@ -100,7 +110,7 @@ def main(args=None):
 
     angle = float(sys.argv[1])
     future = action_client.send_goal(angle)
-    future = action_client.send_goal(-angle)
+    #future = action_client.send_goal(-angle)
 
     rclpy.spin(action_client)
 

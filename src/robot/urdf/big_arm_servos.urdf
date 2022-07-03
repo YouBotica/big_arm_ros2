@@ -157,9 +157,12 @@
   <joint
     name="joint_12"
     type="revolute">
+    <!--origin
+      xyz="0 0 0.11"
+      rpy="-1.5708 -0.95024 -3.0507" /-->
     <origin
       xyz="0 0 0.11"
-      rpy="-1.5708 -0.95024 -3.0507" />
+      rpy="-1.5708 0 -3.0507" />
     <parent
       link="link_1" />
     <child
@@ -218,9 +221,12 @@
   <joint
     name="joint_23"
     type="revolute">
+    <!--origin
+      xyz="0.38 0 0"
+      rpy="0 0 -1.207" /-->
     <origin
       xyz="0.38 0 0"
-      rpy="0 0 -1.207" />
+      rpy="0 0 -1.57079" />
     <parent
       link="link_2" />
     <child
@@ -228,8 +234,8 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="0"
-      upper="6.183"
+      lower="-3.14159"
+      upper="3.14159"
       effort="1000"
       velocity="10" />
     <dynamics
@@ -239,6 +245,9 @@
   <link
     name="link_4">
     <inertial>
+      <!--origin
+        xyz="0.188502975963012 -0.0164677703024454 -0.0171883854493124"
+        rpy="0 0 0" /-->
       <origin
         xyz="0.188502975963012 -0.0164677703024454 -0.0171883854493124"
         rpy="0 0 0" />
@@ -279,9 +288,12 @@
   <joint
     name="joint_34"
     type="revolute">
+    <!--origin
+      xyz="0.38 0 0"
+      rpy="0 -0.090932 -0.98436" /-->
     <origin
       xyz="0.38 0 0"
-      rpy="0 -0.090932 -0.98436" />
+      rpy="0 -0.090932 -1.57079" />
     <parent
       link="link_3" />
     <child
@@ -300,6 +312,9 @@
   <link
     name="link_5">
     <inertial>
+    <!--origin
+        xyz="-0.0141429450104605 7.53233908579176E-08 0.00199995138060591"
+        rpy="0 0 0" /-->
       <origin
         xyz="-0.0141429450104605 7.53233908579176E-08 0.00199995138060591"
         rpy="0 0 0" />
@@ -342,7 +357,10 @@
     type="revolute">
     <origin
       xyz="0.37701 -0.032936 -0.034377"
-      rpy="0.062559 -0.066036 2.3822" />
+      rpy="0 0 3.14159" />
+    <!--origin
+      xyz="0.37701 -0.032936 -0.034377"
+      rpy="0.062559 -0.066036 2.3822" /-->
     <parent
       link="link_4" />
     <child
@@ -1087,6 +1105,88 @@
       <state_interface name="velocity"/>
       <state_interface name="effort"/>
     </joint>
+
+    <joint name="joint_6_g1">
+      <command_interface name="position">
+        <param name="min">-3.14159</param>
+        <param name="max">3.14159</param>
+      </command_interface>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+    </joint>
+
+    <joint name="joint_6_g2">
+      <command_interface name="position">
+        <param name="min">-3.14159</param>
+        <param name="max">3.14159</param>
+      </command_interface>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+    </joint>
+
+    <joint name="joint_6_g3">
+      <command_interface name="position">
+        <param name="min">-3.14159</param>
+        <param name="max">3.14159</param>
+      </command_interface>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+    </joint>
+
+    <joint name="joint_6_g4">
+      <command_interface name="position">
+        <param name="min">-3.14159</param>
+        <param name="max">3.14159</param>
+      </command_interface>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+    </joint>
+
+    <joint name="joint_grip_1b">
+      <command_interface name="position">
+        <param name="min">-3.14159</param>
+        <param name="max">3.14159</param>
+      </command_interface>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+    </joint>
+
+    <joint name="joint_grip_2b">
+      <command_interface name="position">
+        <param name="min">-3.14159</param>
+        <param name="max">3.14159</param>
+      </command_interface>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+    </joint>
+
+    <joint name="joint_grip_3b">
+      <command_interface name="position">
+        <param name="min">-3.14159</param>
+        <param name="max">3.14159</param>
+      </command_interface>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+    </joint>
+
+    <joint name="joint_grip_4b">
+      <command_interface name="position">
+        <param name="min">-3.14159</param>
+        <param name="max">3.14159</param>
+      </command_interface>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+    </joint>
+
+
   </ros2_control>
   
   

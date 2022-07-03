@@ -1,0 +1,17 @@
+[0.000000] (-) TimerEvent: {}
+[0.000537] (robot) JobQueued: {'identifier': 'robot', 'dependencies': OrderedDict()}
+[0.001134] (robot) JobStarted: {'identifier': 'robot'}
+[0.099656] (-) TimerEvent: {}
+[0.200166] (-) TimerEvent: {}
+[0.300651] (-) TimerEvent: {}
+[0.401329] (-) TimerEvent: {}
+[0.501883] (-) TimerEvent: {}
+[0.602297] (-) TimerEvent: {}
+[0.703469] (-) TimerEvent: {}
+[0.803824] (-) TimerEvent: {}
+[0.904335] (-) TimerEvent: {}
+[1.004739] (-) TimerEvent: {}
+[1.105233] (-) TimerEvent: {}
+[1.205687] (-) TimerEvent: {}
+[1.254666] (robot) JobEnded: {'identifier': 'robot', 'rc': 0}
+[1.257215] (-) EventReactorShutdown: {}
