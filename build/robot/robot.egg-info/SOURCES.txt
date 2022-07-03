@@ -8,8 +8,10 @@ setup.py
 ../../build/robot/robot.egg-info/requires.txt
 ../../build/robot/robot.egg-info/top_level.txt
 ../../build/robot/robot.egg-info/zip-safe
+config/effort_controller.yaml
 config/pos_controller.yaml
 launch/display.launch.py
+launch/effort_control.launch.py
 launch/gazebo.launch.py
 launch/move.launch.py
 launch/pos_control.launch.py

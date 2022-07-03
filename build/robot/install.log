@@ -11,6 +11,7 @@
 /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/launch/pos_control.launch.py
 /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/launch/display.launch.py
 /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/launch/move.launch.py
+/home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/launch/effort_control.launch.py
 /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/meshes/grip_1b.STL
 /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/meshes/grip_4.STL
 /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/meshes/grip_2b.STL
@@ -27,6 +28,7 @@
 /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/meshes/base_link.STL
 /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/meshes/grip_4b.STL
 /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/config/pos_controller.yaml
+/home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/config/effort_controller.yaml
 /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/lib/python3.8/site-packages/robot-0.0.0-py3.8.egg-info/PKG-INFO
 /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/lib/python3.8/site-packages/robot-0.0.0-py3.8.egg-info/top_level.txt
 /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/lib/python3.8/site-packages/robot-0.0.0-py3.8.egg-info/zip-safe
