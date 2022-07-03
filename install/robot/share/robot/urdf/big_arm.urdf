@@ -11,7 +11,7 @@
         xyz="5.10334886736748E-36 -1.54939116262366E-18 0.0248239436619718"
         rpy="0 0 0" />
       <mass
-        value="25.4419917555561" />
+        value="2.4419917555561" />
       <inertia
         ixx="0.150370490434844"
         ixy="-8.31151180314476E-36"
@@ -44,6 +44,15 @@
       </geometry>
     </collision>
   </link>
+
+  <link name="world"/>
+  <joint name="world_joint" type="fixed">
+    <parent link="world" />
+    <child link = "base_link" />
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+  </joint>
+
+
   <link
     name="link_1">
     <inertial>
@@ -99,7 +108,7 @@
     <limit
       lower="-3.14159"
       upper="3.14159"
-      effort="1000"
+      effort="10000"
       velocity="10" />
   </joint>
   <link
@@ -156,8 +165,8 @@
       xyz="0 0 1" />
     <limit
       lower="0"
-      upper="6.31"
-      effort="1000"
+      upper="0"
+      effort="10000"
       velocity="10" />
   </joint>
   <link
@@ -214,7 +223,7 @@
       xyz="0 0 1" />
     <limit
       lower="0"
-      upper="6.183"
+      upper="0"
       effort="1000"
       velocity="10" />
   </joint>
@@ -272,7 +281,7 @@
       xyz="0 0 1" />
     <limit
       lower="0"
-      upper="6.183"
+      upper="0"
       effort="1000"
       velocity="10" />
   </joint>
@@ -330,7 +339,7 @@
       xyz="0 0 1" />
     <limit
       lower="0"
-      upper="6.183"
+      upper="0"
       effort="1000"
       velocity="10" />
   </joint>
@@ -388,7 +397,7 @@
       xyz="0 0 1" />
     <limit
       lower="0"
-      upper="6.183"
+      upper="0"
       effort="1000"
       velocity="10" />
   </joint>
@@ -994,6 +1003,81 @@
     <material>Gazebo/Orange</material>
   </gazebo> 
 
+  <!-- ROS2 CONTROL -->
+    <!--ros2_control name="GazeboSystem" type="system">
+    <hardware>
+      <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+    </hardware>    
+    <joint name="joint_base_1">
+      <command_interface name="position">
+        <param name="min">-3.14159</param>
+        <param name="max">3.14159</param>
+      </command_interface>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+    </joint>
+
+    <joint name="joint_12">
+      <command_interface name="position">
+        <param name="min">-3.14159</param>
+        <param name="max">3.14159</param>
+      </command_interface>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+    </joint>
+
+    <joint name="joint_23">
+      <command_interface name="position">
+        <param name="min">-3.14159</param>
+        <param name="max">3.14159</param>
+      </command_interface>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+    </joint>
+
+    <joint name="joint_34">
+      <command_interface name="position">
+        <param name="min">-3.14159</param>
+        <param name="max">3.14159</param>
+      </command_interface>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+    </joint>
+
+    <joint name="joint_45">
+      <command_interface name="position">
+        <param name="min">-3.14159</param>
+        <param name="max">3.14159</param>
+      </command_interface>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+    </joint>
+
+    <joint name="joint_56">
+      <command_interface name="position">
+        <param name="min">-3.14159</param>
+        <param name="max">3.14159</param>
+      </command_interface>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+    </joint>
+  </ros2_control>
+  
+  
+  
+  
+  <gazebo>
+    <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
+      <parameters>/home/legacy/Mechatronics Projects/big_arm_ws/src/robot/config/pos_controller.yaml</parameters>
+    </plugin>
+  </gazebo-->
+
   <!--Use Gazebo Joint State Publisher-->
 
   <gazebo>
@@ -1007,7 +1091,6 @@
         <joint_name>joint_45</joint_name>
         <joint_name>joint_56</joint_name>
         <joint_name>joint_6_g1</joint_name>
-        <!--gripper-->
         <joint_name>joint_6_g2</joint_name>
         <joint_name>joint_6_g3</joint_name>
         <joint_name>joint_6_g4</joint_name>
@@ -1018,5 +1101,4 @@
 
     </plugin>
   </gazebo>
-
 </robot>

@@ -1,0 +1,22 @@
+[0.656s] Invoking command in '/home/legacy/Mechatronics Projects/big_arm_ws/src/robot': PYTHONPATH=/home/legacy/Mechatronics Projects/big_arm_ws/install/robot/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robot build --build-base /home/legacy/Mechatronics Projects/big_arm_ws/build/robot/build install --prefix /home/legacy/Mechatronics Projects/big_arm_ws/install/robot --record /home/legacy/Mechatronics Projects/big_arm_ws/build/robot/install.log --single-version-externally-managed
+[0.890s] running egg_info
+[0.890s] writing ../../build/robot/robot.egg-info/PKG-INFO
+[0.890s] writing dependency_links to ../../build/robot/robot.egg-info/dependency_links.txt
+[0.890s] writing entry points to ../../build/robot/robot.egg-info/entry_points.txt
+[0.891s] writing requirements to ../../build/robot/robot.egg-info/requires.txt
+[0.891s] writing top-level names to ../../build/robot/robot.egg-info/top_level.txt
+[0.921s] reading manifest file '../../build/robot/robot.egg-info/SOURCES.txt'
+[0.922s] writing manifest file '../../build/robot/robot.egg-info/SOURCES.txt'
+[0.922s] running build
+[0.922s] running build_py
+[0.922s] running install
+[0.923s] running install_lib
+[0.924s] running install_data
+[0.925s] copying urdf/big_arm.urdf -> /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/urdf
+[0.925s] running install_egg_info
+[0.926s] removing '/home/legacy/Mechatronics Projects/big_arm_ws/install/robot/lib/python3.8/site-packages/robot-0.0.0-py3.8.egg-info' (and everything under it)
+[0.927s] Copying ../../build/robot/robot.egg-info to /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/lib/python3.8/site-packages/robot-0.0.0-py3.8.egg-info
+[0.927s] running install_scripts
+[0.942s] Installing position_controller script to /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/lib/robot
+[0.942s] writing list of installed files to '/home/legacy/Mechatronics Projects/big_arm_ws/build/robot/install.log'
+[0.959s] Invoked command in '/home/legacy/Mechatronics Projects/big_arm_ws/src/robot' returned '0': PYTHONPATH=/home/legacy/Mechatronics Projects/big_arm_ws/install/robot/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robot build --build-base /home/legacy/Mechatronics Projects/big_arm_ws/build/robot/build install --prefix /home/legacy/Mechatronics Projects/big_arm_ws/install/robot --record /home/legacy/Mechatronics Projects/big_arm_ws/build/robot/install.log --single-version-externally-managed
