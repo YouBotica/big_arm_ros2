@@ -33,11 +33,11 @@ def generate_launch_description():
         description='Use simulation (Gazebo) clock if true'
         )
 
-    robot_name_in_model = 'big_arm'
+    robot_name_in_model = 'big_arm_servos'
 
     # Get URDF via xacro
 
-    urdf_file_name = 'big_arm.urdf'
+    urdf_file_name = 'big_arm_servos.urdf'
     urdf = os.path.join(
         get_package_share_directory('robot'),
         'urdf',

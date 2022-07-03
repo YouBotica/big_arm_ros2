@@ -13,10 +13,10 @@ joint_trajectory_controller:
     joints:
       - joint_base_1
       - joint_12
-      #- joint_23
-      #- joint_34
-      #- joint_45
-      #- joint_56
+      - joint_23
+      - joint_34
+      - joint_45
+      - joint_56
     interface_name: position
     command_interfaces:
       - position

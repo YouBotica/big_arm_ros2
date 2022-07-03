@@ -18,7 +18,7 @@ class ControlActionClient(Node):
     def __init__(self):
         super().__init__('control_actionclient')
         self._action_client = ActionClient(self, FollowJointTrajectory, '/joint_trajectory_controller/follow_joint_trajectory')
-        self.actual_angles = [0.0, 0.0, 0.0]
+        self.actual_angles = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
 
         qos_profile = QoSProfile(depth=10)
         self.publisher_ = self.create_publisher(Float64MultiArray, 'angle_publisher', 10)
@@ -35,11 +35,19 @@ class ControlActionClient(Node):
         point1.positions = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
 
         point2 = JointTrajectoryPoint()
-        point2.time_from_start = Duration(seconds=3, nanoseconds=0).to_msg()
-        point2.positions = [angle, angle, -angle, angle, angle/2, angle/2]
+        point2.time_from_start = Duration(seconds=5, nanoseconds=0).to_msg()
+
+        point3 = JointTrajectoryPoint()
+        point3.time_from_start = Duration(seconds=10, nanoseconds=0).to_msg()
+
+
+        #point2.positions = [angle, angle, -angle, angle, angle/2, angle/2]
+        point2.positions = [2.3, -0.5, 1.0, 0.5, 0.3, 1.0]
+        point3.positions = [3.14159, 0.5, 0.0, 0.25, -0.2, 0.5]
 
         points.append(point1)
         points.append(point2)
+        points.append(point3)
 
         goal_msg.goal_time_tolerance = Duration(seconds=20, nanoseconds=0).to_msg()
         goal_msg.trajectory.joint_names = joint_names
@@ -92,6 +100,7 @@ def main(args=None):
 
     angle = float(sys.argv[1])
     future = action_client.send_goal(angle)
+    future = action_client.send_goal(-angle)
 
     rclpy.spin(action_client)
 

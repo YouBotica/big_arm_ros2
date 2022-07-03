@@ -11,5 +11,5 @@ def generate_launch_description():
             package='robot',
             executable='position_controller',
             output='screen',
-            arguments=["0.1"]),
+            arguments=["1.0"]),
     ])
