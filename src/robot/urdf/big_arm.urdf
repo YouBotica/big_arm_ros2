@@ -60,7 +60,7 @@
         xyz="-6.72935833564308E-17 5.41722740362335E-16 0.0562858835388927"
         rpy="0 0 0" />
       <mass
-        value="1.24036308689963" />
+        value="2.24036308689963" />
       <inertia
         ixx="0.00602313752636761"
         ixy="2.1208125474502E-05"
@@ -108,7 +108,7 @@
     <limit
       lower="-3.14159"
       upper="3.14159"
-      effort="100"
+      effort="10000"
       velocity="10" />
     <dynamics
       damping="0.3"
@@ -157,9 +157,12 @@
   <joint
     name="joint_12"
     type="revolute">
+    <!--origin
+      xyz="0 0 0.11"
+      rpy="-1.5708 -0.95024 -3.0507" /-->
     <origin
       xyz="0 0 0.11"
-      rpy="-1.5708 -0.95024 -3.0507" />
+      rpy="-1.5708 0 -3.14159" />
     <parent
       link="link_1" />
     <child
@@ -167,8 +170,8 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="0"
-      upper="0"
+      lower="-3.14159"
+      upper="3.14159"
       effort="10000"
       velocity="10" />
     <dynamics
@@ -218,9 +221,12 @@
   <joint
     name="joint_23"
     type="revolute">
+    <!--origin
+      xyz="0.38 0 0"
+      rpy="0 0 -1.207" /-->
     <origin
       xyz="0.38 0 0"
-      rpy="0 0 -1.207" />
+      rpy="0 0 -1.57079" />
     <parent
       link="link_2" />
     <child
@@ -228,8 +234,8 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="0"
-      upper="0"
+      lower="-3.14159"
+      upper="3.14159"
       effort="1000"
       velocity="10" />
     <dynamics
@@ -239,6 +245,9 @@
   <link
     name="link_4">
     <inertial>
+      <!--origin
+        xyz="0.188502975963012 -0.0164677703024454 -0.0171883854493124"
+        rpy="0 0 0" /-->
       <origin
         xyz="0.188502975963012 -0.0164677703024454 -0.0171883854493124"
         rpy="0 0 0" />
@@ -255,7 +264,7 @@
     <visual>
       <origin
         xyz="0 0 0"
-        rpy="0 0 0" />
+        rpy="0 -0.1 0.08" />
       <geometry>
         <mesh
           filename="package://robot/meshes/link_4.STL" />
@@ -269,7 +278,7 @@
     <collision>
       <origin
         xyz="0 0 0"
-        rpy="0 0 0" />
+        rpy="0 -0.1 0" />
       <geometry>
         <mesh
           filename="package://robot/meshes/link_4.STL" />
@@ -279,9 +288,12 @@
   <joint
     name="joint_34"
     type="revolute">
+    <!--origin
+      xyz="0.38 0 0"
+      rpy="0 -0.090932 -0.98436" /-->
     <origin
       xyz="0.38 0 0"
-      rpy="0 -0.090932 -0.98436" />
+      rpy="0 0 -1.57079" />
     <parent
       link="link_3" />
     <child
@@ -290,7 +302,7 @@
       xyz="0 0 1" />
     <limit
       lower="0"
-      upper="0"
+      upper="6.183"
       effort="1000"
       velocity="10" />
     <dynamics
@@ -300,6 +312,9 @@
   <link
     name="link_5">
     <inertial>
+    <!--origin
+        xyz="-0.0141429450104605 7.53233908579176E-08 0.00199995138060591"
+        rpy="0 0 0" /-->
       <origin
         xyz="-0.0141429450104605 7.53233908579176E-08 0.00199995138060591"
         rpy="0 0 0" />
@@ -341,8 +356,11 @@
     name="joint_45"
     type="revolute">
     <origin
+      xyz="0.37701 0 0"
+      rpy="0 0 3.14159" />
+    <!--origin
       xyz="0.37701 -0.032936 -0.034377"
-      rpy="0.062559 -0.066036 2.3822" />
+      rpy="0.062559 -0.066036 2.3822" /-->
     <parent
       link="link_4" />
     <child
@@ -351,7 +369,7 @@
       xyz="0 0 1" />
     <limit
       lower="0"
-      upper="0"
+      upper="6.183"
       effort="1000"
       velocity="10" />
     <dynamics
@@ -412,7 +430,7 @@
       xyz="0 0 1" />
     <limit
       lower="0"
-      upper="0"
+      upper="6.183"
       effort="1000"
       velocity="10" />
     <dynamics
@@ -537,9 +555,6 @@
       upper="0"
       effort="1000"
       velocity="10" />
-    <dynamics
-      damping="0.1"
-      friction="0.1" />
   </joint>
   <link
     name="grip_2">
@@ -598,9 +613,6 @@
       upper="0"
       effort="1000"
       velocity="10" />
-    <dynamics
-      damping="0.1"
-      friction="0.1" />
   </joint>
   <link
     name="grip_2b">
@@ -659,9 +671,6 @@
       upper="0"
       effort="1000"
       velocity="10" />
-    <dynamics
-      damping="0.1"
-      friction="0.1" />
   </joint>
   <link
     name="grip_3">
@@ -720,9 +729,6 @@
       upper="0"
       effort="1000"
       velocity="10" />
-    <dynamics
-      damping="0.1"
-      friction="0.1" />
   </joint>
   <link
     name="grip_3b">
@@ -781,9 +787,6 @@
       upper="0"
       effort="1000"
       velocity="10" />
-    <dynamics
-      damping="0.1"
-      friction="0.1" />
   </joint>
   <link
     name="grip_4">
@@ -842,9 +845,6 @@
       upper="0"
       effort="1000"
       velocity="10" />
-    <dynamics
-      damping="0.1"
-      friction="0.1" />
   </joint>
   <link
     name="grip_4b">
@@ -903,9 +903,6 @@
       upper="0"
       effort="1000"
       velocity="10" />
-    <dynamics
-      damping="0.1"
-      friction="0.1" />
   </joint>
 
   <!-- GAZEBO REFERENCES FOR BODIES-->
