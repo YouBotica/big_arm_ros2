@@ -905,9 +905,103 @@
       velocity="10" />
   </joint>
 
-  <!-- GAZEBO REFERENCES FOR BODIES-->
+  <!-- CAMERA -->
+
+  <link
+    name="camera_link">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.03" />
+      <inertia
+        ixx="1E-5"
+        ixy="-6.30057515429682E-19"
+        ixz="9.52689050201753E-19"
+        iyy="1E-5"
+        iyz="-2.5410988417629E-20"
+        izz="1E-5" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+    <geometry>
+      <box size="0.02 0.02 0.02"/>
+    </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0.913725490196078 0.0313725490196078 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+          <box size="0.02 0.02 0.02"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="camera_joint" type="fixed">
+    <parent link="link_1" />
+    <child link = "camera_link" />
+    <origin xyz="0.15 0.0 0.05" rpy="0.0 0.0 0.0" />
+  </joint>
+
+  <gazebo reference="camera_link">
+    <sensor type="camera" name="camera1">
+      <update_rate>30.0</update_rate>
+      <camera name="head">
+        <horizontal_fov>1.3962634</horizontal_fov>
+        <image>
+          <width>800</width>
+          <height>800</height>
+          <format>R8G8B8</format>
+        </image>
+        <clip>
+          <near>0.02</near>
+          <far>300</far>
+        </clip>
+        <noise>
+          <type>gaussian</type>
+          <!-- Noise is sampled independently per pixel on each frame.
+               That pixel's noise value is added to each of its color
+               channels, which at that point lie in the range [0,1]. -->
+          <mean>0.0</mean>
+          <stddev>0.007</stddev>
+        </noise>
+      </camera>
+      <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
+        <alwaysOn>true</alwaysOn>
+        <updateRate>0.0</updateRate>
+        <cameraName>big_arm/camera1</cameraName>
+        <imageTopicName>image_raw</imageTopicName>
+        <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+        <frameName>camera_link</frameName>
+        <hackBaseline>0.07</hackBaseline>
+        <distortionK1>0.0</distortionK1>
+        <distortionK2>0.0</distortionK2>
+        <distortionK3>0.0</distortionK3>
+        <distortionT1>0.0</distortionT1>
+        <distortionT2>0.0</distortionT2>
+      </plugin>
+    </sensor>
+  </gazebo>
 
    <!-- GAZEBO REFERENCES FOR BODIES-->
+
+  <gazebo reference="camera_link">
+  <selfCollide>true</selfCollide>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>100000</kp>
+    <kd>0.1</kd>
+    <material>Gazebo/Brown</material>
+  </gazebo>  
 
   <gazebo reference="base_link">
   <selfCollide>true</selfCollide>
@@ -1194,7 +1288,6 @@
   
   
   
-  
   <gazebo>
     <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
       <parameters>/home/legacy/Mechatronics Projects/big_arm_ws/src/robot/config/pos_controller.yaml</parameters>
@@ -1203,25 +1296,11 @@
 
   <!--Use Gazebo Joint State Publisher-->
 
-  <!--gazebo>
+  <gazebo>
     <plugin name="gazebo_ros_joint_state_publisher"
         filename="libgazebo_ros_joint_state_publisher.so">
         <update_rate>100</update_rate>
-        <joint_name>joint_base_1</joint_name>
-        <joint_name>joint_12</joint_name>
-        <joint_name>joint_23</joint_name>
-        <joint_name>joint_34</joint_name>
-        <joint_name>joint_45</joint_name>
-        <joint_name>joint_56</joint_name>
-        <joint_name>joint_6_g1</joint_name>
-        <joint_name>joint_6_g2</joint_name>
-        <joint_name>joint_6_g3</joint_name>
-        <joint_name>joint_6_g4</joint_name>
-        <joint_name>joint_grip_1b</joint_name>
-        <joint_name>joint_grip_2b</joint_name>
-        <joint_name>joint_grip_3b</joint_name>
-        <joint_name>joint_grip_4b</joint_name>
-
+        <joint_name>camera_joint</joint_name>
     </plugin>
-  </gazebo-->
+  </gazebo>
 </robot>
