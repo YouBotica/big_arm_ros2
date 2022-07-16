@@ -23,7 +23,7 @@ def generate_launch_description():
     pkg_share = FindPackageShare(package=package_name).find(package_name)
     pkg_gazebo_ros = FindPackageShare(package='gazebo_ros').find('gazebo_ros') 
 
-    world_file_path = 'sim_world.world'
+    world_file_path = 'default_world.world'
     world = LaunchConfiguration('world')
     world_path = os.path.join(pkg_share, 'worlds',  world_file_path)
 
@@ -103,7 +103,7 @@ def generate_launch_description():
    
 
     gazebo = ExecuteProcess(
-        cmd=['gazebo', '--verbose', '-s', 'libgazebo_ros_factory.so', 
+        cmd=['gazebo', world_path, '--verbose', '-s', 'libgazebo_ros_factory.so', 
         '-s', 'libgazebo_ros_init.so'], output='screen',
         )
      
