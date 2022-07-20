@@ -1,0 +1,2 @@
+[console_scripts]
+position_controller = robot.position_controller:main

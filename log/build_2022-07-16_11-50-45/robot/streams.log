@@ -1,0 +1,27 @@
+[1.819s] Invoking command in '/home/legacy/Mechatronics Projects/big_arm_ws/src/robot': PYTHONPATH=/home/legacy/Mechatronics Projects/big_arm_ws/install/robot/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robot build --build-base /home/legacy/Mechatronics Projects/big_arm_ws/build/robot/build install --prefix /home/legacy/Mechatronics Projects/big_arm_ws/install/robot --record /home/legacy/Mechatronics Projects/big_arm_ws/build/robot/install.log --single-version-externally-managed
+[2.096s] /home/legacy/.local/lib/python3.8/site-packages/setuptools/dist.py:772: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[2.097s]   warnings.warn(
+[2.097s] /home/legacy/.local/lib/python3.8/site-packages/setuptools/dist.py:772: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[2.097s]   warnings.warn(
+[2.732s] running egg_info
+[2.795s] writing ../../build/robot/robot.egg-info/PKG-INFO
+[2.843s] writing dependency_links to ../../build/robot/robot.egg-info/dependency_links.txt
+[2.991s] writing entry points to ../../build/robot/robot.egg-info/entry_points.txt
+[3.089s] writing requirements to ../../build/robot/robot.egg-info/requires.txt
+[3.138s] writing top-level names to ../../build/robot/robot.egg-info/top_level.txt
+[3.216s] reading manifest file '../../build/robot/robot.egg-info/SOURCES.txt'
+[3.217s] writing manifest file '../../build/robot/robot.egg-info/SOURCES.txt'
+[3.217s] running build
+[3.218s] running build_py
+[3.218s] running install
+[3.218s] /home/legacy/.local/lib/python3.8/site-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[3.218s]   warnings.warn(
+[3.223s] running install_lib
+[3.294s] running install_data
+[3.308s] running install_egg_info
+[3.372s] removing '/home/legacy/Mechatronics Projects/big_arm_ws/install/robot/lib/python3.8/site-packages/robot-0.0.0-py3.8.egg-info' (and everything under it)
+[3.372s] Copying ../../build/robot/robot.egg-info to /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/lib/python3.8/site-packages/robot-0.0.0-py3.8.egg-info
+[3.373s] running install_scripts
+[3.489s] Installing position_controller script to /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/lib/robot
+[3.490s] writing list of installed files to '/home/legacy/Mechatronics Projects/big_arm_ws/build/robot/install.log'
+[3.522s] Invoked command in '/home/legacy/Mechatronics Projects/big_arm_ws/src/robot' returned '0': PYTHONPATH=/home/legacy/Mechatronics Projects/big_arm_ws/install/robot/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robot build --build-base /home/legacy/Mechatronics Projects/big_arm_ws/build/robot/build install --prefix /home/legacy/Mechatronics Projects/big_arm_ws/install/robot --record /home/legacy/Mechatronics Projects/big_arm_ws/build/robot/install.log --single-version-externally-managed

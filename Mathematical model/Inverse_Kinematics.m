@@ -1,12 +1,24 @@
-syms th1 th2 th3 th4 th5
-syms l1 l1b l2 l3 l4 l5
-syms Px Py Pz
+syms th2 th3
 
-left = asin((Pz-l1-l1b-l2*sin(th2)-l3*cos(th3)*sin(th2))/(-l4*cos(th3)*sin(th2)-l5*sin(th5)*cos(th3)*sin(th2)));
-right = acos(((Py/sin(th1))-l2*cos(th2)-l3*sin(th3)*cos(th2))/(l4*sin(th3)*cos(th2)+l5*cos(th5)*sin(th3)*cos(th2)));
+lb1 = 0.025; l1 = 0.110; l2 = 0.38; l3 = 0.38, l4 = 0.38; l5 = 0.04;
+th5 = 0;
+th4 = 0;
+Px = 0.6;
+Py = 0.6;
+Pz = 0.6;
 
-eq1 = left - right == 0;
-isolate(eq1, th2)
+th1 = atan(Py/Px);
+
+eq1 = (l2*cos(th2)+l3*cos(asin((-Pz + l1 + lb1 - l2*sin(th2))/(l3))) + l4 + l5)*cos(th1) == Px;
+
+%solve(eq1, th2, 'PrincipalValue',true)
+
+th2 = double(vpasolve(eq1, th2, [-3.14159, 3.14159]))
+
+
+th3 = -th2 + asin((-Pz+l1+lb1-l2*sin(th2))/(l3));
+
+th4 = -th2 - th3
 
 %%
 
