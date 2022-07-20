@@ -175,8 +175,8 @@
       effort="10000"
       velocity="10" />
     <dynamics
-      damping="0.1"
-      friction="0.1" />
+      damping="0.3"
+      friction="0.3" />
   </joint>
   <link
     name="link_3">
@@ -239,8 +239,8 @@
       effort="1000"
       velocity="10" />
     <dynamics
-      damping="0.1"
-      friction="0.1" />
+      damping="0.3"
+      friction="0.3" />
   </joint>
   <link
     name="link_4">
@@ -306,8 +306,8 @@
       effort="1000"
       velocity="10" />
     <dynamics
-      damping="0.1"
-      friction="0.1" />
+      damping="0.3"
+      friction="0.3" />
   </joint>
   <link
     name="link_5">
@@ -373,8 +373,8 @@
       effort="1000"
       velocity="10" />
     <dynamics
-      damping="0.1"
-      friction="0.1" />
+      damping="0.3"
+      friction="0.3" />
   </joint>
   <link
     name="link_6">

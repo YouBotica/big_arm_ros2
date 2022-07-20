@@ -1,7 +1,10 @@
 #! /usr/bin/env python
 
+import os
 import sys
 import rclpy
+import pdb
+
 from rclpy.duration import Duration
 from rclpy.action import ActionClient
 from rclpy.node import Node
@@ -9,6 +12,15 @@ from rclpy.qos import QoSProfile
 from control_msgs.action import FollowJointTrajectory
 from trajectory_msgs.msg import JointTrajectoryPoint
 from std_msgs.msg import Float64MultiArray
+from ament_index_python.packages import get_package_share_directory
+
+pkg_name = 'robot'
+file_location = get_package_share_directory(pkg_name)
+
+sys.path.insert(0, os.path.join(file_location, 'scripts')) # Add scripts to path since the Inverse Kinematics function is stored there.
+
+from inverse_kinematics import compute_IK
+
 # ros2 action list -t
 # ros2 action info /joint_trajectory_controller/follow_joint_trajectory -t
 # ros2 interface show control_msgs/action/FollowJointTrajectory
@@ -37,29 +49,19 @@ class ControlActionClient(Node):
         point2 = JointTrajectoryPoint()
         point2.time_from_start = Duration(seconds=5, nanoseconds=0).to_msg()
 
-        point3 = JointTrajectoryPoint()
-        point3.time_from_start = Duration(seconds=10, nanoseconds=0).to_msg()
+        desired_pos = [0.6, -0.5, 0.6]
 
-        point4 = JointTrajectoryPoint()
-        point4.time_from_start = Duration(seconds=15, nanoseconds=0).to_msg()
-
-        point5 = JointTrajectoryPoint()
-        point5.time_from_start = Duration(seconds=22, nanoseconds=0).to_msg()
-
+        th1, th2, th3, th4, th5 = compute_IK(Px = desired_pos[0], Py = desired_pos[1], Pz = desired_pos[2])
 
         #point2.positions = [angle, angle, -angle, angle, angle/2, angle/2]
-        point2.positions = [2.3, -0.5, 1.0, 0.5, 0.3, 1.0]
-        point3.positions = [3.14159, -1.0, 0.0, 0.25, -0.2, -1.57079]
-        point4.positions = [6.0, 0.0, 0.5, 1.0, 1.0, -1.0]
-        point5.positions = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+        #pdb.set_trace()
+        point2.positions = [float(th1), float(th2), float(th3), float(th4), float(th5), 0.0]
 
         points.append(point1)
         points.append(point2)
-        points.append(point3)
-        points.append(point4)
-        points.append(point5)
 
-        goal_msg.goal_time_tolerance = Duration(seconds=20, nanoseconds=0).to_msg()
+
+        goal_msg.goal_time_tolerance = Duration(seconds=5, nanoseconds=0).to_msg()
         goal_msg.trajectory.joint_names = joint_names
         goal_msg.trajectory.points = points
 
@@ -108,7 +110,7 @@ def main(args=None):
 
     action_client = ControlActionClient()
 
-    angle = float(sys.argv[1])
+    angle = 0.0 #float(sys.argv[1])
     future = action_client.send_goal(angle)
     #future = action_client.send_goal(-angle)
 
