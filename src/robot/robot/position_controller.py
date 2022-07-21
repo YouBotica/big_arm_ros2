@@ -49,12 +49,15 @@ class ControlActionClient(Node):
         point2 = JointTrajectoryPoint()
         point2.time_from_start = Duration(seconds=5, nanoseconds=0).to_msg()
 
-        desired_pos = [0.6, -0.5, 0.6]
+        desired_pos = [-0.6, -0.5, 0.6]
 
         th1, th2, th3, th4, th5 = compute_IK(Px = desired_pos[0], Py = desired_pos[1], Pz = desired_pos[2])
 
-        #point2.positions = [angle, angle, -angle, angle, angle/2, angle/2]
-        #pdb.set_trace()
+        if (th1 == -100):
+            self.get_logger().info('No solutions found for the desired configuration')
+            rclpy.shutdown()
+
+
         point2.positions = [float(th1), float(th2), float(th3), float(th4), float(th5), 0.0]
 
         points.append(point1)
