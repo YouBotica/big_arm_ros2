@@ -49,13 +49,38 @@ class ControlActionClient(Node):
         point2 = JointTrajectoryPoint()
         point2.time_from_start = Duration(seconds=5, nanoseconds=0).to_msg()
 
-        desired_pos = [-0.6, -0.5, 0.6]
+        desired_pos = [-0.3, 0.4, 0.5]
 
         th1, th2, th3, th4, th5 = compute_IK(Px = desired_pos[0], Py = desired_pos[1], Pz = desired_pos[2])
 
         if (th1 == -100):
-            self.get_logger().info('No solutions found for the desired configuration')
+            self.get_logger().info('ERROR 1: No solutions found for the desired configuration')
             rclpy.shutdown()
+        
+        if (th1 == -101):
+            self.get_logger().info('ERROR 2: Invalid Z coordinate')
+            rclpy.shutdown()
+        
+        if (th1 == -102):
+            self.get_logger().info('ERROR 3: Invalid th2 angle. It should be between -3.14159 and 0')
+            rclpy.shutdown()
+        
+        if (th1 == -103):
+            self.get_logger().info('ERROR 4: Invalid th3 angle. It should be between -2.6 and 2.6')
+            rclpy.shutdown()
+        
+        if (th1 == -104):
+            self.get_logger().info('ERROR 5: Invalid th4 angle. It should be between -2.6 and 2.6')
+            rclpy.shutdown()
+        
+        if (th1 == -105):
+            self.get_logger().info('ERROR 6: Invalid th5 angle. It should be between -2.6 and 2.6')
+            rclpy.shutdown()
+        
+        if (th1 == -106):
+            self.get_logger().info('ERROR 7: Out of working volume')
+            rclpy.shutdown()
+
 
 
         point2.positions = [float(th1), float(th2), float(th3), float(th4), float(th5), 0.0]
