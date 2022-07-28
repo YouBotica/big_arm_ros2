@@ -1,0 +1,45 @@
+[2.845s] Invoking command in '/home/legacy/Mechatronics Projects/big_arm_ws/src/robot_services': PYTHONPATH=/home/legacy/Mechatronics Projects/big_arm_ws/install/robot_services/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robot_services build --build-base /home/legacy/Mechatronics Projects/big_arm_ws/build/robot_services/build install --prefix /home/legacy/Mechatronics Projects/big_arm_ws/install/robot_services --record /home/legacy/Mechatronics Projects/big_arm_ws/build/robot_services/install.log --single-version-externally-managed
+[3.150s] /home/legacy/.local/lib/python3.8/site-packages/setuptools/dist.py:772: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[3.150s]   warnings.warn(
+[3.151s] /home/legacy/.local/lib/python3.8/site-packages/setuptools/dist.py:772: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[3.151s]   warnings.warn(
+[3.849s] running egg_info
+[3.850s] creating ../../build/robot_services/robot_services.egg-info
+[3.918s] writing ../../build/robot_services/robot_services.egg-info/PKG-INFO
+[3.973s] writing dependency_links to ../../build/robot_services/robot_services.egg-info/dependency_links.txt
+[4.176s] writing entry points to ../../build/robot_services/robot_services.egg-info/entry_points.txt
+[4.329s] writing requirements to ../../build/robot_services/robot_services.egg-info/requires.txt
+[4.410s] writing top-level names to ../../build/robot_services/robot_services.egg-info/top_level.txt
+[4.412s] writing manifest file '../../build/robot_services/robot_services.egg-info/SOURCES.txt'
+[4.527s] reading manifest file '../../build/robot_services/robot_services.egg-info/SOURCES.txt'
+[4.528s] writing manifest file '../../build/robot_services/robot_services.egg-info/SOURCES.txt'
+[4.528s] running build
+[4.528s] running build_py
+[4.529s] creating /home/legacy/Mechatronics Projects/big_arm_ws/build/robot_services/build
+[4.529s] creating /home/legacy/Mechatronics Projects/big_arm_ws/build/robot_services/build/lib
+[4.529s] creating /home/legacy/Mechatronics Projects/big_arm_ws/build/robot_services/build/lib/robot_services
+[4.529s] copying robot_services/__init__.py -> /home/legacy/Mechatronics Projects/big_arm_ws/build/robot_services/build/lib/robot_services
+[4.529s] copying robot_services/get_joint_states.py -> /home/legacy/Mechatronics Projects/big_arm_ws/build/robot_services/build/lib/robot_services
+[4.529s] running install
+[4.530s] /home/legacy/.local/lib/python3.8/site-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[4.530s]   warnings.warn(
+[4.537s] running install_lib
+[4.664s] creating /home/legacy/Mechatronics Projects/big_arm_ws/install/robot_services/lib/python3.8/site-packages/robot_services
+[4.665s] copying /home/legacy/Mechatronics Projects/big_arm_ws/build/robot_services/build/lib/robot_services/__init__.py -> /home/legacy/Mechatronics Projects/big_arm_ws/install/robot_services/lib/python3.8/site-packages/robot_services
+[4.665s] copying /home/legacy/Mechatronics Projects/big_arm_ws/build/robot_services/build/lib/robot_services/get_joint_states.py -> /home/legacy/Mechatronics Projects/big_arm_ws/install/robot_services/lib/python3.8/site-packages/robot_services
+[4.665s] byte-compiling /home/legacy/Mechatronics Projects/big_arm_ws/install/robot_services/lib/python3.8/site-packages/robot_services/__init__.py to __init__.cpython-38.pyc
+[4.665s] byte-compiling /home/legacy/Mechatronics Projects/big_arm_ws/install/robot_services/lib/python3.8/site-packages/robot_services/get_joint_states.py to get_joint_states.cpython-38.pyc
+[4.666s] running install_data
+[4.684s] creating /home/legacy/Mechatronics Projects/big_arm_ws/install/robot_services/share/ament_index
+[4.685s] creating /home/legacy/Mechatronics Projects/big_arm_ws/install/robot_services/share/ament_index/resource_index
+[4.685s] creating /home/legacy/Mechatronics Projects/big_arm_ws/install/robot_services/share/ament_index/resource_index/packages
+[4.685s] copying resource/robot_services -> /home/legacy/Mechatronics Projects/big_arm_ws/install/robot_services/share/ament_index/resource_index/packages
+[4.685s] copying package.xml -> /home/legacy/Mechatronics Projects/big_arm_ws/install/robot_services/share/robot_services
+[4.686s] creating /home/legacy/Mechatronics Projects/big_arm_ws/install/robot_services/share/robot_services/srv
+[4.686s] copying srv/joints_now.srv -> /home/legacy/Mechatronics Projects/big_arm_ws/install/robot_services/share/robot_services/srv
+[4.686s] running install_egg_info
+[4.788s] Copying ../../build/robot_services/robot_services.egg-info to /home/legacy/Mechatronics Projects/big_arm_ws/install/robot_services/lib/python3.8/site-packages/robot_services-0.0.0-py3.8.egg-info
+[4.789s] running install_scripts
+[5.012s] Installing joints_service script to /home/legacy/Mechatronics Projects/big_arm_ws/install/robot_services/lib/robot_services
+[5.013s] writing list of installed files to '/home/legacy/Mechatronics Projects/big_arm_ws/build/robot_services/install.log'
+[5.087s] Invoked command in '/home/legacy/Mechatronics Projects/big_arm_ws/src/robot_services' returned '0': PYTHONPATH=/home/legacy/Mechatronics Projects/big_arm_ws/install/robot_services/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robot_services build --build-base /home/legacy/Mechatronics Projects/big_arm_ws/build/robot_services/build install --prefix /home/legacy/Mechatronics Projects/big_arm_ws/install/robot_services --record /home/legacy/Mechatronics Projects/big_arm_ws/build/robot_services/install.log --single-version-externally-managed

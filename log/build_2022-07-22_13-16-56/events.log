@@ -1,0 +1,125 @@
+[0.000000] (-) TimerEvent: {}
+[0.000448] (robot) JobQueued: {'identifier': 'robot', 'dependencies': OrderedDict()}
+[0.001377] (robot_services) JobQueued: {'identifier': 'robot_services', 'dependencies': OrderedDict()}
+[0.001536] (robot) JobStarted: {'identifier': 'robot'}
+[0.022089] (robot_services) JobStarted: {'identifier': 'robot_services'}
+[0.099640] (-) TimerEvent: {}
+[0.199997] (-) TimerEvent: {}
+[0.300290] (-) TimerEvent: {}
+[0.400682] (-) TimerEvent: {}
+[0.501022] (-) TimerEvent: {}
+[0.601317] (-) TimerEvent: {}
+[0.701574] (-) TimerEvent: {}
+[0.801830] (-) TimerEvent: {}
+[0.902115] (-) TimerEvent: {}
+[1.002403] (-) TimerEvent: {}
+[1.102782] (-) TimerEvent: {}
+[1.203170] (-) TimerEvent: {}
+[1.303426] (-) TimerEvent: {}
+[1.403720] (-) TimerEvent: {}
+[1.503968] (-) TimerEvent: {}
+[1.604219] (-) TimerEvent: {}
+[1.704443] (-) TimerEvent: {}
+[1.804734] (-) TimerEvent: {}
+[1.904973] (-) TimerEvent: {}
+[2.005423] (-) TimerEvent: {}
+[2.109341] (-) TimerEvent: {}
+[2.209722] (-) TimerEvent: {}
+[2.310000] (-) TimerEvent: {}
+[2.410298] (-) TimerEvent: {}
+[2.510621] (-) TimerEvent: {}
+[2.610939] (-) TimerEvent: {}
+[2.711275] (-) TimerEvent: {}
+[2.811587] (-) TimerEvent: {}
+[2.911907] (-) TimerEvent: {}
+[3.012239] (-) TimerEvent: {}
+[3.112522] (-) TimerEvent: {}
+[3.212910] (-) TimerEvent: {}
+[3.313176] (-) TimerEvent: {}
+[3.413442] (-) TimerEvent: {}
+[3.513926] (-) TimerEvent: {}
+[3.529036] (robot) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/robot', 'build', '--build-base', '/home/legacy/Mechatronics Projects/big_arm_ws/build/robot/build', 'install', '--prefix', '/home/legacy/Mechatronics Projects/big_arm_ws/install/robot', '--record', '/home/legacy/Mechatronics Projects/big_arm_ws/build/robot/install.log', '--single-version-externally-managed'], 'cwd': '/home/legacy/Mechatronics Projects/big_arm_ws/src/robot', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'legacy', 'LC_TIME': 'es_CO.UTF-8', 'SSH_AGENT_PID': '2653', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/legacy', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'HOMEBREW_PREFIX': '/home/linuxbrew/.linuxbrew', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'es_CO.UTF-8', 'MANAGERPID': '1336', 'HOMEBREW_SHELLENV_PREFIX': '/home/linuxbrew/.linuxbrew', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'LIBVIRT_DEFAULT_URI': 'qemu:///system', 'MANDATORY_PATH': '/usr/share/gconf/ubuntu.mandatory.path', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/legacy/Mechatronics Projects/big_arm_ws/install', 'INFOPATH': '/home/linuxbrew/.linuxbrew/share/info:', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'legacy', 'JOURNAL_STREAM': '8:60972', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'DEFAULTS_PATH': '/usr/share/gconf/ubuntu.default.path', 'USERNAME': 'legacy', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/foxy/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/legacy/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/legacy-TUF-GAMING-FX504GM-FX80GM:@/tmp/.ICE-unix/2680,unix/legacy-TUF-GAMING-FX504GM-FX80GM:/tmp/.ICE-unix/2680', 'INVOCATION_ID': 'f649d8642a5442f1b7123e2ddb9a9c57', 'HOMEBREW_CELLAR': '/home/linuxbrew/.linuxbrew/Cellar', 'PAPERSIZE': 'letter', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'es_CO.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/0b712baf_aa25_48b8_a9c2_df3dc6cf6201', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'es_CO.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.117', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/legacy/Mechatronics Projects/big_arm_ws/install/robot_services:/home/legacy/Mechatronics Projects/big_arm_ws/install/robot:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'es_CO.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'es_CO.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'es_CO.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/legacy/Mechatronics Projects/big_arm_ws/build/robot', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/legacy/Mechatronics Projects/big_arm_ws/install/robot/lib/python3.8/site-packages:/home/legacy/Mechatronics Projects/big_arm_ws/install/robot_services/lib/python3.8/site-packages:/home/legacy/Mechatronics Projects/big_arm_ws/install/robot/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'HOMEBREW_REPOSITORY': '/home/linuxbrew/.linuxbrew/Homebrew', 'LC_NUMERIC': 'es_CO.UTF-8', 'LC_PAPER': 'es_CO.UTF-8', 'COLCON': '1', 'MANPATH': '/home/linuxbrew/.linuxbrew/share/man:', 'VTE_VERSION': '6003'}, 'shell': False}
+[3.569336] (robot_services) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/robot_services', 'build', '--build-base', '/home/legacy/Mechatronics Projects/big_arm_ws/build/robot_services/build', 'install', '--prefix', '/home/legacy/Mechatronics Projects/big_arm_ws/install/robot_services', '--record', '/home/legacy/Mechatronics Projects/big_arm_ws/build/robot_services/install.log', '--single-version-externally-managed'], 'cwd': '/home/legacy/Mechatronics Projects/big_arm_ws/src/robot_services', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'legacy', 'LC_TIME': 'es_CO.UTF-8', 'SSH_AGENT_PID': '2653', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/legacy', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'HOMEBREW_PREFIX': '/home/linuxbrew/.linuxbrew', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'es_CO.UTF-8', 'MANAGERPID': '1336', 'HOMEBREW_SHELLENV_PREFIX': '/home/linuxbrew/.linuxbrew', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'LIBVIRT_DEFAULT_URI': 'qemu:///system', 'MANDATORY_PATH': '/usr/share/gconf/ubuntu.mandatory.path', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/legacy/Mechatronics Projects/big_arm_ws/install', 'INFOPATH': '/home/linuxbrew/.linuxbrew/share/info:', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'legacy', 'JOURNAL_STREAM': '8:60972', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'DEFAULTS_PATH': '/usr/share/gconf/ubuntu.default.path', 'USERNAME': 'legacy', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/foxy/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/legacy/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/legacy-TUF-GAMING-FX504GM-FX80GM:@/tmp/.ICE-unix/2680,unix/legacy-TUF-GAMING-FX504GM-FX80GM:/tmp/.ICE-unix/2680', 'INVOCATION_ID': 'f649d8642a5442f1b7123e2ddb9a9c57', 'HOMEBREW_CELLAR': '/home/linuxbrew/.linuxbrew/Cellar', 'PAPERSIZE': 'letter', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'es_CO.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/0b712baf_aa25_48b8_a9c2_df3dc6cf6201', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'es_CO.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.117', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/legacy/Mechatronics Projects/big_arm_ws/install/robot_services:/home/legacy/Mechatronics Projects/big_arm_ws/install/robot:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'es_CO.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'es_CO.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'es_CO.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/legacy/Mechatronics Projects/big_arm_ws/build/robot_services', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/legacy/Mechatronics Projects/big_arm_ws/install/robot_services/lib/python3.8/site-packages:/home/legacy/Mechatronics Projects/big_arm_ws/install/robot_services/lib/python3.8/site-packages:/home/legacy/Mechatronics Projects/big_arm_ws/install/robot/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'HOMEBREW_REPOSITORY': '/home/linuxbrew/.linuxbrew/Homebrew', 'LC_NUMERIC': 'es_CO.UTF-8', 'LC_PAPER': 'es_CO.UTF-8', 'COLCON': '1', 'MANPATH': '/home/linuxbrew/.linuxbrew/share/man:', 'VTE_VERSION': '6003'}, 'shell': False}
+[3.614031] (-) TimerEvent: {}
+[3.714414] (-) TimerEvent: {}
+[3.814770] (-) TimerEvent: {}
+[3.915028] (-) TimerEvent: {}
+[3.923578] (robot) StderrLine: {'line': b"/home/legacy/.local/lib/python3.8/site-packages/setuptools/dist.py:772: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[3.923861] (robot) StderrLine: {'line': b'  warnings.warn(\n'}
+[3.924163] (robot) StderrLine: {'line': b"/home/legacy/.local/lib/python3.8/site-packages/setuptools/dist.py:772: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead\n"}
+[3.924362] (robot) StderrLine: {'line': b'  warnings.warn(\n'}
+[3.995541] (robot_services) StderrLine: {'line': b"/home/legacy/.local/lib/python3.8/site-packages/setuptools/dist.py:772: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[3.995782] (robot_services) StderrLine: {'line': b'  warnings.warn(\n'}
+[3.995968] (robot_services) StderrLine: {'line': b"/home/legacy/.local/lib/python3.8/site-packages/setuptools/dist.py:772: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead\n"}
+[3.996107] (robot_services) StderrLine: {'line': b'  warnings.warn(\n'}
+[4.015121] (-) TimerEvent: {}
+[4.115422] (-) TimerEvent: {}
+[4.215681] (-) TimerEvent: {}
+[4.316001] (-) TimerEvent: {}
+[4.416315] (-) TimerEvent: {}
+[4.516621] (-) TimerEvent: {}
+[4.616956] (-) TimerEvent: {}
+[4.717321] (-) TimerEvent: {}
+[4.817617] (-) TimerEvent: {}
+[4.818286] (robot) StdoutLine: {'line': b'running egg_info\n'}
+[4.905522] (robot) StdoutLine: {'line': b'writing ../../build/robot/robot.egg-info/PKG-INFO\n'}
+[4.917714] (-) TimerEvent: {}
+[4.920212] (robot_services) StdoutLine: {'line': b'running egg_info\n'}
+[4.972668] (robot) StdoutLine: {'line': b'writing dependency_links to ../../build/robot/robot.egg-info/dependency_links.txt\n'}
+[5.009716] (robot_services) StdoutLine: {'line': b'writing ../../build/robot_services/robot_services.egg-info/PKG-INFO\n'}
+[5.017823] (-) TimerEvent: {}
+[5.081746] (robot_services) StdoutLine: {'line': b'writing dependency_links to ../../build/robot_services/robot_services.egg-info/dependency_links.txt\n'}
+[5.117913] (-) TimerEvent: {}
+[5.184184] (robot) StdoutLine: {'line': b'writing entry points to ../../build/robot/robot.egg-info/entry_points.txt\n'}
+[5.218007] (-) TimerEvent: {}
+[5.299015] (robot_services) StdoutLine: {'line': b'writing entry points to ../../build/robot_services/robot_services.egg-info/entry_points.txt\n'}
+[5.318113] (-) TimerEvent: {}
+[5.326676] (robot) StdoutLine: {'line': b'writing requirements to ../../build/robot/robot.egg-info/requires.txt\n'}
+[5.395441] (robot) StdoutLine: {'line': b'writing top-level names to ../../build/robot/robot.egg-info/top_level.txt\n'}
+[5.418277] (-) TimerEvent: {}
+[5.436924] (robot_services) StdoutLine: {'line': b'writing requirements to ../../build/robot_services/robot_services.egg-info/requires.txt\n'}
+[5.504415] (robot) StdoutLine: {'line': b"reading manifest file '../../build/robot/robot.egg-info/SOURCES.txt'\n"}
+[5.505829] (robot) StdoutLine: {'line': b"writing manifest file '../../build/robot/robot.egg-info/SOURCES.txt'\n"}
+[5.506129] (robot) StdoutLine: {'line': b'running build\n'}
+[5.506314] (robot) StdoutLine: {'line': b'running build_py\n'}
+[5.506503] (robot) StdoutLine: {'line': b'running install\n'}
+[5.506702] (robot) StderrLine: {'line': b'/home/legacy/.local/lib/python3.8/site-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[5.506864] (robot) StderrLine: {'line': b'  warnings.warn(\n'}
+[5.507476] (robot_services) StdoutLine: {'line': b'writing top-level names to ../../build/robot_services/robot_services.egg-info/top_level.txt\n'}
+[5.514119] (robot) StdoutLine: {'line': b'running install_lib\n'}
+[5.518357] (-) TimerEvent: {}
+[5.614985] (robot) StdoutLine: {'line': b'running install_data\n'}
+[5.618436] (-) TimerEvent: {}
+[5.620823] (robot_services) StdoutLine: {'line': b"reading manifest file '../../build/robot_services/robot_services.egg-info/SOURCES.txt'\n"}
+[5.622024] (robot_services) StdoutLine: {'line': b"writing manifest file '../../build/robot_services/robot_services.egg-info/SOURCES.txt'\n"}
+[5.622267] (robot_services) StdoutLine: {'line': b'running build\n'}
+[5.622438] (robot_services) StdoutLine: {'line': b'running build_py\n'}
+[5.622566] (robot_services) StdoutLine: {'line': b'copying robot_services/get_joint_states.py -> /home/legacy/Mechatronics Projects/big_arm_ws/build/robot_services/build/lib/robot_services\n'}
+[5.622722] (robot_services) StdoutLine: {'line': b'running install\n'}
+[5.622886] (robot_services) StderrLine: {'line': b'/home/legacy/.local/lib/python3.8/site-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[5.623015] (robot_services) StderrLine: {'line': b'  warnings.warn(\n'}
+[5.629785] (robot_services) StdoutLine: {'line': b'running install_lib\n'}
+[5.634676] (robot) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.718534] (-) TimerEvent: {}
+[5.725200] (robot) StdoutLine: {'line': b"removing '/home/legacy/Mechatronics Projects/big_arm_ws/install/robot/lib/python3.8/site-packages/robot-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[5.725603] (robot) StdoutLine: {'line': b'Copying ../../build/robot/robot.egg-info to /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/lib/python3.8/site-packages/robot-0.0.0-py3.8.egg-info\n'}
+[5.726723] (robot) StdoutLine: {'line': b'running install_scripts\n'}
+[5.739051] (robot_services) StdoutLine: {'line': b'copying /home/legacy/Mechatronics Projects/big_arm_ws/build/robot_services/build/lib/robot_services/get_joint_states.py -> /home/legacy/Mechatronics Projects/big_arm_ws/install/robot_services/lib/python3.8/site-packages/robot_services\n'}
+[5.739769] (robot_services) StdoutLine: {'line': b'byte-compiling /home/legacy/Mechatronics Projects/big_arm_ws/install/robot_services/lib/python3.8/site-packages/robot_services/get_joint_states.py to get_joint_states.cpython-38.pyc\n'}
+[5.740485] (robot_services) StdoutLine: {'line': b'running install_data\n'}
+[5.761173] (robot_services) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.818695] (-) TimerEvent: {}
+[5.853938] (robot_services) StdoutLine: {'line': b"removing '/home/legacy/Mechatronics Projects/big_arm_ws/install/robot_services/lib/python3.8/site-packages/robot_services-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[5.854307] (robot_services) StdoutLine: {'line': b'Copying ../../build/robot_services/robot_services.egg-info to /home/legacy/Mechatronics Projects/big_arm_ws/install/robot_services/lib/python3.8/site-packages/robot_services-0.0.0-py3.8.egg-info\n'}
+[5.856158] (robot_services) StdoutLine: {'line': b'running install_scripts\n'}
+[5.889571] (robot) StdoutLine: {'line': b'Installing position_controller script to /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/lib/robot\n'}
+[5.889958] (robot) StdoutLine: {'line': b"writing list of installed files to '/home/legacy/Mechatronics Projects/big_arm_ws/build/robot/install.log'\n"}
+[5.918826] (-) TimerEvent: {}
+[5.939303] (robot) CommandEnded: {'returncode': 0}
+[5.966592] (robot) JobEnded: {'identifier': 'robot', 'rc': 0}
+[6.017586] (robot_services) StdoutLine: {'line': b'Installing joints_service script to /home/legacy/Mechatronics Projects/big_arm_ws/install/robot_services/lib/robot_services\n'}
+[6.017939] (robot_services) StdoutLine: {'line': b"writing list of installed files to '/home/legacy/Mechatronics Projects/big_arm_ws/build/robot_services/install.log'\n"}
+[6.018900] (-) TimerEvent: {}
+[6.069275] (robot_services) CommandEnded: {'returncode': 0}
+[6.083151] (robot_services) JobEnded: {'identifier': 'robot_services', 'rc': 0}
+[6.083947] (-) EventReactorShutdown: {}

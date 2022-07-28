@@ -1,0 +1,76 @@
+[2.695s] Invoking command in '/home/legacy/Mechatronics Projects/big_arm_ws/src/robot': PYTHONPATH=/home/legacy/Mechatronics Projects/big_arm_ws/install/robot/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robot build --build-base /home/legacy/Mechatronics Projects/big_arm_ws/build/robot/build install --prefix /home/legacy/Mechatronics Projects/big_arm_ws/install/robot --record /home/legacy/Mechatronics Projects/big_arm_ws/build/robot/install.log --single-version-externally-managed
+[2.988s] /home/legacy/.local/lib/python3.8/site-packages/setuptools/dist.py:772: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[2.988s]   warnings.warn(
+[2.988s] /home/legacy/.local/lib/python3.8/site-packages/setuptools/dist.py:772: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[2.988s]   warnings.warn(
+[3.662s] running egg_info
+[3.663s] creating ../../build/robot/robot.egg-info
+[3.728s] writing ../../build/robot/robot.egg-info/PKG-INFO
+[3.780s] writing dependency_links to ../../build/robot/robot.egg-info/dependency_links.txt
+[3.938s] writing entry points to ../../build/robot/robot.egg-info/entry_points.txt
+[4.042s] writing requirements to ../../build/robot/robot.egg-info/requires.txt
+[4.094s] writing top-level names to ../../build/robot/robot.egg-info/top_level.txt
+[4.096s] writing manifest file '../../build/robot/robot.egg-info/SOURCES.txt'
+[4.177s] reading manifest file '../../build/robot/robot.egg-info/SOURCES.txt'
+[4.178s] writing manifest file '../../build/robot/robot.egg-info/SOURCES.txt'
+[4.178s] running build
+[4.178s] running build_py
+[4.178s] creating /home/legacy/Mechatronics Projects/big_arm_ws/build/robot/build
+[4.178s] creating /home/legacy/Mechatronics Projects/big_arm_ws/build/robot/build/lib
+[4.178s] creating /home/legacy/Mechatronics Projects/big_arm_ws/build/robot/build/lib/robot
+[4.178s] copying robot/__init__.py -> /home/legacy/Mechatronics Projects/big_arm_ws/build/robot/build/lib/robot
+[4.178s] copying robot/position_controller.py -> /home/legacy/Mechatronics Projects/big_arm_ws/build/robot/build/lib/robot
+[4.179s] running install
+[4.179s] /home/legacy/.local/lib/python3.8/site-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[4.179s]   warnings.warn(
+[4.183s] running install_lib
+[4.266s] creating /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/lib/python3.8/site-packages/robot
+[4.266s] copying /home/legacy/Mechatronics Projects/big_arm_ws/build/robot/build/lib/robot/__init__.py -> /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/lib/python3.8/site-packages/robot
+[4.266s] copying /home/legacy/Mechatronics Projects/big_arm_ws/build/robot/build/lib/robot/position_controller.py -> /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/lib/python3.8/site-packages/robot
+[4.266s] byte-compiling /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/lib/python3.8/site-packages/robot/__init__.py to __init__.cpython-38.pyc
+[4.267s] byte-compiling /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/lib/python3.8/site-packages/robot/position_controller.py to position_controller.cpython-38.pyc
+[4.268s] running install_data
+[4.282s] creating /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/ament_index
+[4.285s] creating /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/ament_index/resource_index
+[4.286s] creating /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/ament_index/resource_index/packages
+[4.286s] copying resource/robot -> /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/ament_index/resource_index/packages
+[4.286s] copying package.xml -> /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot
+[4.286s] creating /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/urdf
+[4.286s] copying urdf/big_arm_urdf.csv -> /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/urdf
+[4.286s] copying urdf/big_arm_servos.urdf -> /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/urdf
+[4.287s] copying urdf/big_arm.urdf -> /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/urdf
+[4.288s] creating /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/launch
+[4.288s] copying launch/gazebo.launch.py -> /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/launch
+[4.288s] copying launch/pos_control.launch.py -> /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/launch
+[4.288s] copying launch/display.launch.py -> /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/launch
+[4.288s] copying launch/move.launch.py -> /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/launch
+[4.288s] copying launch/effort_control.launch.py -> /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/launch
+[4.288s] creating /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/meshes
+[4.288s] copying meshes/grip_1b.STL -> /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/meshes
+[4.290s] copying meshes/grip_4.STL -> /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/meshes
+[4.292s] copying meshes/grip_2b.STL -> /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/meshes
+[4.293s] copying meshes/link_3.STL -> /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/meshes
+[4.295s] copying meshes/link_2.STL -> /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/meshes
+[4.297s] copying meshes/grip_3b.STL -> /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/meshes
+[4.298s] copying meshes/grip_2.STL -> /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/meshes
+[4.300s] copying meshes/link_6.STL -> /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/meshes
+[4.301s] copying meshes/link_5.STL -> /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/meshes
+[4.302s] copying meshes/link_1.STL -> /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/meshes
+[4.303s] copying meshes/grip_3.STL -> /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/meshes
+[4.304s] copying meshes/link_4.STL -> /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/meshes
+[4.306s] copying meshes/grip_1.STL -> /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/meshes
+[4.307s] copying meshes/base_link.STL -> /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/meshes
+[4.307s] copying meshes/grip_4b.STL -> /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/meshes
+[4.308s] creating /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/config
+[4.308s] copying config/pos_controller.yaml -> /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/config
+[4.308s] copying config/effort_controller.yaml -> /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/config
+[4.308s] creating /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/worlds
+[4.309s] copying worlds/default_world.world -> /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/worlds
+[4.309s] creating /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/scripts
+[4.309s] copying scripts/inverse_kinematics.py -> /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/share/robot/scripts
+[4.309s] running install_egg_info
+[4.378s] Copying ../../build/robot/robot.egg-info to /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/lib/python3.8/site-packages/robot-0.0.0-py3.8.egg-info
+[4.379s] running install_scripts
+[4.500s] Installing position_controller script to /home/legacy/Mechatronics Projects/big_arm_ws/install/robot/lib/robot
+[4.500s] writing list of installed files to '/home/legacy/Mechatronics Projects/big_arm_ws/build/robot/install.log'
+[4.536s] Invoked command in '/home/legacy/Mechatronics Projects/big_arm_ws/src/robot' returned '0': PYTHONPATH=/home/legacy/Mechatronics Projects/big_arm_ws/install/robot/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robot build --build-base /home/legacy/Mechatronics Projects/big_arm_ws/build/robot/build install --prefix /home/legacy/Mechatronics Projects/big_arm_ws/install/robot --record /home/legacy/Mechatronics Projects/big_arm_ws/build/robot/install.log --single-version-externally-managed
