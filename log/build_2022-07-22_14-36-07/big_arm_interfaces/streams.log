@@ -1,0 +1,53 @@
+[0.069s] Invoking command in '/home/legacy/Mechatronics Projects/big_arm_ws/build/big_arm_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/legacy/Mechatronics Projects/big_arm_ws/install/robot_services:/home/legacy/Mechatronics Projects/big_arm_ws/install/robot:/opt/ros/foxy /usr/bin/cmake --build /home/legacy/Mechatronics Projects/big_arm_ws/build/big_arm_interfaces -- -j8 -l8
+[2.275s] CMake Error at /opt/ros/foxy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:60 (message):
+[2.276s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[2.276s]   big_arm_interfaces --arguments-file /home/legacy/Mechatronics
+[2.277s]   Projects/big_arm_ws/build/big_arm_interfaces/rosidl_adapter__arguments__big_arm_interfaces.json
+[2.278s]   --output-dir /home/legacy/Mechatronics
+[2.279s]   Projects/big_arm_ws/build/big_arm_interfaces/rosidl_adapter/big_arm_interfaces
+[2.280s]   --output-file /home/legacy/Mechatronics
+[2.281s]   Projects/big_arm_ws/build/big_arm_interfaces/rosidl_adapter/big_arm_interfaces.idls)
+[2.281s]   returned error code 1:
+[2.281s] 
+[2.284s]   Error with: big_arm_interfaces JointsNow_Request enable
+[2.284s] 
+[2.284s]   Traceback (most recent call last):
+[2.285s] 
+[2.285s]     File "/usr/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+[2.285s]       return _run_code(code, main_globals, None,
+[2.285s]     File "/usr/lib/python3.8/runpy.py", line 87, in _run_code
+[2.286s]       exec(code, run_globals)
+[2.287s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[2.288s]       sys.exit(main())
+[2.290s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/main.py", line 53, in main
+[2.291s]       abs_idl_file = convert_to_idl(
+[2.292s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/__init__.py", line 24, in convert_to_idl
+[2.294s]       return convert_srv_to_idl(
+[2.294s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/srv/__init__.py", line 28, in convert_srv_to_idl
+[2.294s]       srv = parse_service_string(package_name, input_file.stem, content)
+[2.294s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 852, in parse_service_string
+[2.295s]       request_message = parse_message_string(
+[2.295s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 506, in parse_message_string
+[2.295s]       raise InvalidFieldDefinition(line)
+[2.295s] 
+[2.295s]   rosidl_adapter.parser.InvalidFieldDefinition: enable
+[2.295s] 
+[2.295s] Call Stack (most recent call first):
+[2.296s]   /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[2.296s]   CMakeLists.txt:25 (rosidl_generate_interfaces)
+[2.296s] 
+[2.296s] 
+[2.296s] make: *** [Makefile:748: cmake_check_build_system] Error 1
+[2.297s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[2.297s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[2.297s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.297s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[2.298s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.298s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[2.298s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.298s] -- Found std_msgs: 2.0.5 (/opt/ros/foxy/share/std_msgs/cmake)
+[2.298s] -- Found std_srvs: 2.0.5 (/opt/ros/foxy/share/std_srvs/cmake)
+[2.298s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[2.298s] -- Configuring incomplete, errors occurred!
+[2.299s] See also "/home/legacy/Mechatronics Projects/big_arm_ws/build/big_arm_interfaces/CMakeFiles/CMakeOutput.log".
+[2.299s] Invoked command in '/home/legacy/Mechatronics Projects/big_arm_ws/build/big_arm_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/legacy/Mechatronics Projects/big_arm_ws/install/robot_services:/home/legacy/Mechatronics Projects/big_arm_ws/install/robot:/opt/ros/foxy /usr/bin/cmake --build /home/legacy/Mechatronics Projects/big_arm_ws/build/big_arm_interfaces -- -j8 -l8

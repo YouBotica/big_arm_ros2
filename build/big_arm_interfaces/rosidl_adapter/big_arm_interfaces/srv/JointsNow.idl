@@ -1,0 +1,35 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from big_arm_interfaces/srv/JointsNow.srv
+// generated code does not contain a copyright notice
+
+
+module big_arm_interfaces {
+  module srv {
+    struct JointsNow_Request {
+      int64 enable;
+    };
+    struct JointsNow_Response {
+      boolean success;
+
+      double th1;
+
+      double th2;
+
+      double th3;
+
+      double th4;
+
+      double th5;
+
+      double th6;
+
+      double g2;
+
+      double g22;
+
+      double g4;
+
+      double g44;
+    };
+  };
+};

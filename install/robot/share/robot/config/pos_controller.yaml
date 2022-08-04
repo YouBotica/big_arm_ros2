@@ -1,0 +1,30 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100  # Hz
+
+    joint_trajectory_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+joint_trajectory_controller:
+  ros__parameters:
+    joints:
+      - joint_base_1
+      - joint_12
+      - joint_23
+      - joint_34
+      - joint_45
+      - joint_56
+      - joint_6_g2
+      - joint_6_g4
+      - joint_grip_2b
+      - joint_grip_4b
+    interface_name: position
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+    open_loop_control: true

@@ -1,0 +1,119 @@
+[0.050s] Invoking command in '/home/legacy/Mechatronics Projects/big_arm_ws/build/big_arm_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/legacy/Mechatronics Projects/big_arm_ws/install/robot_services:/home/legacy/Mechatronics Projects/big_arm_ws/install/robot:/opt/ros/foxy /usr/bin/cmake --build /home/legacy/Mechatronics Projects/big_arm_ws/build/big_arm_interfaces -- -j8 -l8
+[1.072s] [  6%] Built target big_arm_interfaces__cpp
+[1.072s] [ 12%] Built target big_arm_interfaces__rosidl_generator_c
+[1.073s] [ 22%] Built target big_arm_interfaces__rosidl_typesupport_introspection_cpp
+[1.073s] [ 32%] Built target big_arm_interfaces__rosidl_typesupport_cpp
+[1.074s] [ 41%] Built target big_arm_interfaces__rosidl_typesupport_introspection_c
+[1.075s] [ 51%] Built target big_arm_interfaces__rosidl_typesupport_fastrtps_cpp
+[1.075s] [ 61%] Built target big_arm_interfaces__rosidl_typesupport_c
+[1.075s] [ 70%] Built target big_arm_interfaces__rosidl_typesupport_fastrtps_c
+[1.075s] [ 70%] Built target big_arm_interfaces
+[1.075s] [ 74%] Built target big_arm_interfaces__py
+[1.075s] [ 80%] Built target big_arm_interfaces__python
+[1.075s] [ 87%] Built target big_arm_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[1.076s] [ 93%] Built target big_arm_interfaces__rosidl_typesupport_introspection_c__pyext
+[1.076s] [100%] Built target big_arm_interfaces__rosidl_typesupport_c__pyext
+[1.956s] Invoked command in '/home/legacy/Mechatronics Projects/big_arm_ws/build/big_arm_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/legacy/Mechatronics Projects/big_arm_ws/install/robot_services:/home/legacy/Mechatronics Projects/big_arm_ws/install/robot:/opt/ros/foxy /usr/bin/cmake --build /home/legacy/Mechatronics Projects/big_arm_ws/build/big_arm_interfaces -- -j8 -l8
+[2.016s] Invoking command in '/home/legacy/Mechatronics Projects/big_arm_ws/build/big_arm_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/legacy/Mechatronics Projects/big_arm_ws/install/robot_services:/home/legacy/Mechatronics Projects/big_arm_ws/install/robot:/opt/ros/foxy /usr/bin/cmake --install /home/legacy/Mechatronics Projects/big_arm_ws/build/big_arm_interfaces
+[2.026s] -- Install configuration: ""
+[2.026s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/share/ament_index/resource_index/rosidl_interfaces/big_arm_interfaces
+[2.026s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/include/big_arm_interfaces
+[2.027s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/include/big_arm_interfaces/msg
+[2.027s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/include/big_arm_interfaces/msg/rosidl_generator_c__visibility_control.h
+[2.027s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/include/big_arm_interfaces/srv
+[2.027s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/include/big_arm_interfaces/srv/joints_now.h
+[2.027s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/include/big_arm_interfaces/srv/detail
+[2.027s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/include/big_arm_interfaces/srv/detail/joints_now__struct.h
+[2.027s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/include/big_arm_interfaces/srv/detail/joints_now__functions.c
+[2.028s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/include/big_arm_interfaces/srv/detail/joints_now__type_support.h
+[2.028s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/include/big_arm_interfaces/srv/detail/joints_now__functions.h
+[2.028s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/share/big_arm_interfaces/environment/library_path.sh
+[2.028s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/share/big_arm_interfaces/environment/library_path.dsv
+[2.028s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/lib/libbig_arm_interfaces__rosidl_generator_c.so
+[2.028s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/include/big_arm_interfaces
+[2.028s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/include/big_arm_interfaces/msg
+[2.029s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/include/big_arm_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.029s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/include/big_arm_interfaces/srv
+[2.029s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/include/big_arm_interfaces/srv/detail
+[2.029s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/include/big_arm_interfaces/srv/detail/joints_now__rosidl_typesupport_fastrtps_c.h
+[2.029s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/lib/libbig_arm_interfaces__rosidl_typesupport_fastrtps_c.so
+[2.030s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/include/big_arm_interfaces
+[2.030s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/include/big_arm_interfaces/msg
+[2.030s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/include/big_arm_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.030s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/include/big_arm_interfaces/srv
+[2.030s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/include/big_arm_interfaces/srv/detail
+[2.031s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/include/big_arm_interfaces/srv/detail/dds_fastrtps
+[2.031s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/include/big_arm_interfaces/srv/detail/joints_now__rosidl_typesupport_fastrtps_cpp.hpp
+[2.031s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/lib/libbig_arm_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[2.031s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/include/big_arm_interfaces
+[2.031s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/include/big_arm_interfaces/msg
+[2.031s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/include/big_arm_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.031s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/include/big_arm_interfaces/srv
+[2.032s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/include/big_arm_interfaces/srv/detail
+[2.032s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/include/big_arm_interfaces/srv/detail/joints_now__type_support.c
+[2.032s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/include/big_arm_interfaces/srv/detail/joints_now__rosidl_typesupport_introspection_c.h
+[2.032s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/lib/libbig_arm_interfaces__rosidl_typesupport_introspection_c.so
+[2.032s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/lib/libbig_arm_interfaces__rosidl_typesupport_c.so
+[2.032s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/include/big_arm_interfaces
+[2.033s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/include/big_arm_interfaces/srv
+[2.033s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/include/big_arm_interfaces/srv/joints_now.hpp
+[2.033s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/include/big_arm_interfaces/srv/detail
+[2.033s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/include/big_arm_interfaces/srv/detail/joints_now__traits.hpp
+[2.033s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/include/big_arm_interfaces/srv/detail/joints_now__struct.hpp
+[2.033s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/include/big_arm_interfaces/srv/detail/joints_now__builder.hpp
+[2.033s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/include/big_arm_interfaces
+[2.034s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/include/big_arm_interfaces/srv
+[2.034s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/include/big_arm_interfaces/srv/detail
+[2.034s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/include/big_arm_interfaces/srv/detail/joints_now__type_support.cpp
+[2.034s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/include/big_arm_interfaces/srv/detail/joints_now__rosidl_typesupport_introspection_cpp.hpp
+[2.034s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/lib/libbig_arm_interfaces__rosidl_typesupport_introspection_cpp.so
+[2.034s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/lib/libbig_arm_interfaces__rosidl_typesupport_cpp.so
+[2.034s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/share/big_arm_interfaces/environment/pythonpath.sh
+[2.035s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/share/big_arm_interfaces/environment/pythonpath.dsv
+[2.035s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/lib/python3.8/site-packages/big_arm_interfaces/__init__.py
+[2.071s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/lib/python3.8/site-packages/big_arm_interfaces/srv
+[2.071s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/lib/python3.8/site-packages/big_arm_interfaces/srv/__init__.py
+[2.072s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/lib/python3.8/site-packages/big_arm_interfaces/srv/_joints_now.py
+[2.072s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/lib/python3.8/site-packages/big_arm_interfaces/srv/_joints_now_s.c
+[2.072s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/lib/python3.8/site-packages/big_arm_interfaces/big_arm_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[2.073s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/lib/python3.8/site-packages/big_arm_interfaces/big_arm_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[2.074s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/lib/python3.8/site-packages/big_arm_interfaces/big_arm_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[2.075s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/lib/libbig_arm_interfaces__python.so
+[2.076s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/share/big_arm_interfaces/srv/JointsNow.idl
+[2.076s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/share/big_arm_interfaces/srv/JointsNow.srv
+[2.076s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/share/big_arm_interfaces/srv/JointsNow_Request.msg
+[2.076s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/share/big_arm_interfaces/srv/JointsNow_Response.msg
+[2.076s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/share/ament_index/resource_index/package_run_dependencies/big_arm_interfaces
+[2.076s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/share/ament_index/resource_index/parent_prefix_path/big_arm_interfaces
+[2.077s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/share/big_arm_interfaces/environment/ament_prefix_path.sh
+[2.077s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/share/big_arm_interfaces/environment/ament_prefix_path.dsv
+[2.077s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/share/big_arm_interfaces/environment/path.sh
+[2.077s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/share/big_arm_interfaces/environment/path.dsv
+[2.077s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/share/big_arm_interfaces/local_setup.bash
+[2.077s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/share/big_arm_interfaces/local_setup.sh
+[2.077s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/share/big_arm_interfaces/local_setup.zsh
+[2.077s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/share/big_arm_interfaces/local_setup.dsv
+[2.077s] -- Installing: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/share/big_arm_interfaces/package.dsv
+[2.077s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/share/ament_index/resource_index/packages/big_arm_interfaces
+[2.078s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/share/big_arm_interfaces/cmake/big_arm_interfaces__rosidl_generator_cExport.cmake
+[2.078s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/share/big_arm_interfaces/cmake/big_arm_interfaces__rosidl_generator_cExport-noconfig.cmake
+[2.078s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/share/big_arm_interfaces/cmake/big_arm_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[2.078s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/share/big_arm_interfaces/cmake/big_arm_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[2.078s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/share/big_arm_interfaces/cmake/big_arm_interfaces__rosidl_typesupport_cExport.cmake
+[2.079s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/share/big_arm_interfaces/cmake/big_arm_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[2.079s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/share/big_arm_interfaces/cmake/big_arm_interfaces__rosidl_generator_cppExport.cmake
+[2.079s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/share/big_arm_interfaces/cmake/big_arm_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[2.079s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/share/big_arm_interfaces/cmake/big_arm_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[2.079s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/share/big_arm_interfaces/cmake/big_arm_interfaces__rosidl_typesupport_cppExport.cmake
+[2.080s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/share/big_arm_interfaces/cmake/big_arm_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[2.080s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/share/big_arm_interfaces/cmake/rosidl_cmake-extras.cmake
+[2.080s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/share/big_arm_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.080s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/share/big_arm_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[2.080s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/share/big_arm_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[2.080s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/share/big_arm_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.080s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/share/big_arm_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.080s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/share/big_arm_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.081s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/share/big_arm_interfaces/cmake/big_arm_interfacesConfig.cmake
+[2.081s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/share/big_arm_interfaces/cmake/big_arm_interfacesConfig-version.cmake
+[2.081s] -- Up-to-date: /home/legacy/Mechatronics Projects/big_arm_ws/install/big_arm_interfaces/share/big_arm_interfaces/package.xml
+[2.086s] Invoked command in '/home/legacy/Mechatronics Projects/big_arm_ws/build/big_arm_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/legacy/Mechatronics Projects/big_arm_ws/install/robot_services:/home/legacy/Mechatronics Projects/big_arm_ws/install/robot:/opt/ros/foxy /usr/bin/cmake --install /home/legacy/Mechatronics Projects/big_arm_ws/build/big_arm_interfaces

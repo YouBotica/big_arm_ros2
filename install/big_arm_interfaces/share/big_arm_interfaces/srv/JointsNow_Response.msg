@@ -1,0 +1,12 @@
+
+bool success
+float64 th1
+float64 th2
+float64 th3
+float64 th4
+float64 th5
+float64 th6
+float64 g2
+float64 g22
+float64 g4
+float64 g44
