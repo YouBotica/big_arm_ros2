@@ -112,6 +112,12 @@ def generate_launch_description():
         parameters=[{'use_sim_time': use_sim_time}]
     )
 
+    get_joints_service = Node(
+        package='robot_services',
+        executable='joints_service',
+        name='joints_service',
+    )
+
      
     return LaunchDescription([
         RegisterEventHandler(
@@ -125,5 +131,6 @@ def generate_launch_description():
         robot_state_publisher_node,
         gazebo,
         spawn, 
-        joint_state_broadcaster_spawner      
+        joint_state_broadcaster_spawner,
+        get_joints_service   
         ])

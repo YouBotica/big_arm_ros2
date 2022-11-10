@@ -22,8 +22,16 @@ find_package(rosidl_default_generators REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(std_srvs REQUIRED)
 
+
+find_package(rosidl_default_generators REQUIRED)
+
+
 rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/JointsNow.srv"
+  "msg/CameraBox.msg"
+  "msg/CameraBoundingBoxes.msg"
+  DEPENDENCIES builtin_interfaces std_msgs 
+  ADD_LINTER_TESTS
 )
 
 if(BUILD_TESTING)

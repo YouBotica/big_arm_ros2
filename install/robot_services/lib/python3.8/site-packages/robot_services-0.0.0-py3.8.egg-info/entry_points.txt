@@ -1,2 +1,0 @@
-[console_scripts]
-joints_service = robot_services.get_joint_states:main

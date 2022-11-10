@@ -76,7 +76,7 @@ class ControlActionClient(Node):
 
         th1, th2, th3, th4, th5 = compute_IK(Px = desired_pos[0], Py = desired_pos[1], Pz = desired_pos[2])
 
-        self.error_handling(th1, th2, th3, th4, th5)
+        self.error_handling(th1, th2, th3, th4, th5) # Look out for invalid joint configurations and op volume
 
         point2.positions = [float(th1), float(th2), float(th3), float(th4), float(th5), 0.0, 0.0, 0.0, 0.0, 0.0]
 
