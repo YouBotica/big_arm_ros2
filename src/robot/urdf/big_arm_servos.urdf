@@ -357,7 +357,7 @@
     type="revolute">
     <origin
       xyz="0.37701 0 0"
-      rpy="0 0 3.14159" />
+      rpy="0 0 -1.57079" />
     <!--origin
       xyz="0.37701 -0.032936 -0.034377"
       rpy="0.062559 -0.066036 2.3822" /-->
@@ -437,125 +437,7 @@
       damping="0.1"
       friction="0.1" />
   </joint>
-  <link
-    name="grip_1">
-    <inertial>
-      <origin
-        xyz="0.0674233348638277 -0.00149730770397288 0.00988726780355913"
-        rpy="0 0 0" />
-      <mass
-        value="0.11992363568227" />
-      <inertia
-        ixx="2.32996122881845E-05"
-        ixy="-3.6096640394024E-12"
-        ixz="4.42085269022021E-13"
-        iyy="0.000147857015499886"
-        iyz="8.71359919641666E-07"
-        izz="0.000142235051121448" />
-    </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://robot/meshes/grip_1.STL" />
-      </geometry>
-      <material
-        name="">
-        <color
-          rgba="1 1 1 0.32" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://robot/meshes/grip_1.STL" />
-      </geometry>
-    </collision>
-  </link>
-  <joint
-    name="joint_6_g1"
-    type="revolute">
-    <origin
-      xyz="-0.011072 0.05897 0.091"
-      rpy="-1.7211 -0.33932 1.7564" />
-    <parent
-      link="link_6" />
-    <child
-      link="grip_1" />
-    <axis
-      xyz="0 0 1" />
-    <limit
-      lower="0"
-      upper="0"
-      effort="1000"
-      velocity="10" />
-    <dynamics
-      damping="0.1"
-      friction="0.1" />
-  </joint>
-  <link
-    name="grip_1b">
-    <inertial>
-      <origin
-        xyz="0.0843265899344989 -0.00212380310637394 0.0099999996377477"
-        rpy="0 0 0" />
-      <mass
-        value="0.141643537240913" />
-      <inertia
-        ixx="2.42692219268835E-05"
-        ixy="1.63887843182053E-05"
-        ixz="7.78137406188141E-12"
-        iyy="0.000336749313354746"
-        iyz="-5.98415142376405E-12"
-        izz="0.000330285690314077" />
-    </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://robot/meshes/grip_1b.STL" />
-      </geometry>
-      <material
-        name="">
-        <color
-          rgba="1 1 1 0.32" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://robot/meshes/grip_1b.STL" />
-      </geometry>
-    </collision>
-  </link>
-  <joint
-    name="joint_grip_1b"
-    type="revolute">
-    <origin
-      xyz="0.11 0 0"
-      rpy="0.011605 0.14985 -1.4932" />
-    <parent
-      link="grip_1" />
-    <child
-      link="grip_1b" />
-    <axis
-      xyz="0 0 1" />
-    <limit
-      lower="0"
-      upper="0"
-      effort="1000"
-      velocity="10" />
-  </joint>
+
   <link
     name="grip_2">
     <inertial>
@@ -609,10 +491,13 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="0"
-      upper="0"
+      lower="-3.14159"
+      upper="3.14159"
       effort="1000"
       velocity="10" />
+    <dynamics
+      damping="0.3"
+      friction="0.3" />
   </joint>
   <link
     name="grip_2b">
@@ -667,126 +552,13 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="0"
-      upper="0"
+      lower="-3.14159"
+      upper="3.14159"
       effort="1000"
       velocity="10" />
-  </joint>
-  <link
-    name="grip_3">
-    <inertial>
-      <origin
-        xyz="0.0674233349821467 -0.000216683054989369 -0.00999765235365951"
-        rpy="0 0 0" />
-      <mass
-        value="0.119923637058051" />
-      <inertia
-        ixx="2.32996122767126E-05"
-        ixy="-3.01255348785664E-12"
-        ixz="1.15039704239531E-12"
-        iyy="0.0001479862078452"
-        iyz="-1.27510854779785E-07"
-        izz="0.000142105857428452" />
-    </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://robot/meshes/grip_3.STL" />
-      </geometry>
-      <material
-        name="">
-        <color
-          rgba="1 1 1 0.32" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://robot/meshes/grip_3.STL" />
-      </geometry>
-    </collision>
-  </link>
-  <joint
-    name="joint_6_g3"
-    type="revolute">
-    <origin
-      xyz="0.011072 -0.05897 0.091"
-      rpy="-1.5491 -0.33932 -1.3852" />
-    <parent
-      link="link_6" />
-    <child
-      link="grip_3" />
-    <axis
-      xyz="0 0 1" />
-    <limit
-      lower="0"
-      upper="0"
-      effort="1000"
-      velocity="10" />
-  </joint>
-  <link
-    name="grip_3b">
-    <inertial>
-      <origin
-        xyz="0.0843265835470308 -0.00212380359506137 -0.0100000017555446"
-        rpy="0 0 0" />
-      <mass
-        value="0.141643615845273" />
-      <inertia
-        ixx="2.42692401970422E-05"
-        ixy="1.6388779687381E-05"
-        ixz="-2.83700056075674E-12"
-        iyy="0.000336749373130495"
-        iyz="-7.01396464170066E-12"
-        izz="0.000330285749652679" />
-    </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://robot/meshes/grip_3b.STL" />
-      </geometry>
-      <material
-        name="">
-        <color
-          rgba="1 1 1 0.32" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://robot/meshes/grip_3b.STL" />
-      </geometry>
-    </collision>
-  </link>
-  <joint
-    name="joint_grip_3b"
-    type="revolute">
-    <origin
-      xyz="0.11 0 0"
-      rpy="0 0 -1.5817" />
-    <parent
-      link="grip_3" />
-    <child
-      link="grip_3b" />
-    <axis
-      xyz="0 0 1" />
-    <limit
-      lower="0"
-      upper="0"
-      effort="1000"
-      velocity="10" />
+    <dynamics
+      damping="0.3"
+      friction="0.3" />
   </joint>
   <link
     name="grip_4">
@@ -841,10 +613,13 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="0"
-      upper="0"
+      lower="-3.14159"
+      upper="3.14159"
       effort="1000"
       velocity="10" />
+    <dynamics
+      damping="0.3"
+      friction="0.3" />
   </joint>
   <link
     name="grip_4b">
@@ -899,10 +674,13 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="0"
-      upper="0"
+      lower="-3.14159"
+      upper="3.14159"
       effort="1000"
       velocity="10" />
+    <dynamics
+      damping="0.3"
+      friction="0.3" />
   </joint>
 
   <!-- CAMERA -->
@@ -949,7 +727,7 @@
   <joint name="camera_joint" type="fixed">
     <parent link="link_1" />
     <child link = "camera_link" />
-    <origin xyz="0.15 0.0 0.05" rpy="0.0 0.0 0.0" />
+    <origin xyz="-0.155 0.0 0.05" rpy="0.0 0.0 3.14159" />
   </joint>
 
   <gazebo reference="camera_link">
@@ -958,8 +736,8 @@
       <camera name="head">
         <horizontal_fov>1.3962634</horizontal_fov>
         <image>
-          <width>800</width>
-          <height>800</height>
+          <width>1920</width>
+          <height>1080</height>
           <format>R8G8B8</format>
         </image>
         <clip>
@@ -1000,7 +778,7 @@
     <mu2>0.1</mu2>
     <kp>100000</kp>
     <kd>0.1</kd>
-    <material>Gazebo/Brown</material>
+    <material>Gazebo/Orange</material>
   </gazebo>  
 
   <gazebo reference="base_link">
@@ -1066,24 +844,6 @@
     <material>Gazebo/Orange</material>
   </gazebo> 
 
-  <gazebo reference="grip_1">
-  <selfCollide>true</selfCollide>
-    <mu1>0.1</mu1>
-    <mu2>0.1</mu2>
-    <kp>100000</kp>
-    <kd>1</kd>
-    <material>Gazebo/Orange</material>
-  </gazebo> 
-
-  <gazebo reference="grip_1b">
-  <selfCollide>true</selfCollide>
-    <mu1>100</mu1>
-    <mu2>100</mu2>
-    <kp>100000</kp>
-    <kd>1</kd>
-    <material>Gazebo/Orange</material>
-  </gazebo> 
-
   <gazebo reference="grip_2">
   <selfCollide>true</selfCollide>
     <mu1>100</mu1>
@@ -1101,24 +861,6 @@
     <kd>1</kd>
     <material>Gazebo/Orange</material>
   </gazebo> 
-
-  <gazebo reference="grip_3">
-  <selfCollide>true</selfCollide>
-    <mu1>100</mu1>
-    <mu2>100</mu2>
-    <kp>100000</kp>
-    <kd>1</kd>
-    <material>Gazebo/Orange</material>
-  </gazebo> 
-
-  <gazebo reference="grip_3b">
-  <selfCollide>true</selfCollide>
-    <mu1>100</mu1>
-    <mu2>100</mu2>
-    <kp>100000000</kp>
-    <kd>1</kd>
-    <material>Gazebo/Orange</material>
-  </gazebo>
 
   <gazebo reference="grip_4">
   <selfCollide>true</selfCollide>
@@ -1203,27 +945,7 @@
       <state_interface name="effort"/>
     </joint>
 
-    <joint name="joint_6_g1">
-      <command_interface name="position">
-        <param name="min">-3.14159</param>
-        <param name="max">3.14159</param>
-      </command_interface>
-      <state_interface name="position"/>
-      <state_interface name="velocity"/>
-      <state_interface name="effort"/>
-    </joint>
-
     <joint name="joint_6_g2">
-      <command_interface name="position">
-        <param name="min">-3.14159</param>
-        <param name="max">3.14159</param>
-      </command_interface>
-      <state_interface name="position"/>
-      <state_interface name="velocity"/>
-      <state_interface name="effort"/>
-    </joint>
-
-    <joint name="joint_6_g3">
       <command_interface name="position">
         <param name="min">-3.14159</param>
         <param name="max">3.14159</param>
@@ -1243,27 +965,7 @@
       <state_interface name="effort"/>
     </joint>
 
-    <joint name="joint_grip_1b">
-      <command_interface name="position">
-        <param name="min">-3.14159</param>
-        <param name="max">3.14159</param>
-      </command_interface>
-      <state_interface name="position"/>
-      <state_interface name="velocity"/>
-      <state_interface name="effort"/>
-    </joint>
-
     <joint name="joint_grip_2b">
-      <command_interface name="position">
-        <param name="min">-3.14159</param>
-        <param name="max">3.14159</param>
-      </command_interface>
-      <state_interface name="position"/>
-      <state_interface name="velocity"/>
-      <state_interface name="effort"/>
-    </joint>
-
-    <joint name="joint_grip_3b">
       <command_interface name="position">
         <param name="min">-3.14159</param>
         <param name="max">3.14159</param>

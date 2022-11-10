@@ -37,6 +37,11 @@ class JointsService(Node):
         response.th4 = self.th4_initial
         response.th5 = self.th5_initial
         response.th6 = self.th6_initial
+        response.g2 = self.g2_initial
+        response.g22 = self.g22_initial
+        response.g4 = self.g4_initial
+        response.g44 = self.g44_initial
+
         
         self.get_logger().info(f'Incoming request from a client, responded:  {response}')
 
@@ -48,8 +53,13 @@ class JointsService(Node):
         self.th3_initial = msg.actual.positions[2]
         self.th4_initial = msg.actual.positions[3]
         self.th5_initial = msg.actual.positions[4]
-        self.th6_initial = msg.actual.positions[4] # FIXME
-        #elf.get_logger().info(f'{msg}')
+        self.th6_initial = msg.actual.positions[5]
+        self.g2_initial = msg.actual.positions[6] 
+        self.g4_initial = msg.actual.positions[7] 
+        self.g22_initial = msg.actual.positions[8] 
+        self.g44_initial = msg.actual.positions[9] 
+
+        #self.get_logger().info(f'{msg}')
         self.got_initial_poses = True
 
 

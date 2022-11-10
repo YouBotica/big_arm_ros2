@@ -1,6 +1,0 @@
-{
-  "package_name": "big_arm_interfaces",
-  "non_idl_tuples": [
-    "/home/legacy/Mechatronics Projects/big_arm_ws/src/big_arm_interfaces:srv/JointsNow.srv"
-  ]
-}

@@ -1,4 +1,0 @@
-source;share/big_arm_interfaces/local_setup.bash
-source;share/big_arm_interfaces/local_setup.dsv
-source;share/big_arm_interfaces/local_setup.sh
-source;share/big_arm_interfaces/local_setup.zsh

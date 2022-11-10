@@ -17,6 +17,10 @@ joint_trajectory_controller:
       - joint_34
       - joint_45
       - joint_56
+      - joint_6_g2
+      - joint_6_g4
+      - joint_grip_2b
+      - joint_grip_4b
     interface_name: position
     command_interfaces:
       - position

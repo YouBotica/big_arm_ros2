@@ -38,7 +38,7 @@ def compute_IK(Px, Py, Pz):
         th2 = float(sol[0])
         th3 = -th2 + asin((-Pz+l1+lb1-l2*sin(th2))/(l3))
         th4 = -th2 - th3
-        th5 = 3.14159/2
+        th5 = 0.0 #3.14159/2
     
     else:   # If a solution was not found, try with the following configuration:   
         eq2 = l1 + lb1 - l2*sin(th2) + l3*sin(acos((math.sqrt(Px**2+Py**2)-l2*cos(th2)-l4-l5)/l3))
@@ -53,7 +53,7 @@ def compute_IK(Px, Py, Pz):
         th3 = th2 - acos((math.sqrt(Px**2+Py**2)-l2*cos(th2)-l4-l5)/(l3))
         th4 = -th2 - th3
 
-        th5 = 3.14159/2 
+        th5 = 0.0 #3.14159/2 
 
     if (Pz < 0.1):
         return -101, -101, -101, -101, -101
