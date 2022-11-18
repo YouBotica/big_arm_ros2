@@ -14,7 +14,9 @@ from launch.actions import RegisterEventHandler
 from launch.event_handlers import OnProcessExit
   
 def generate_launch_description():
- 
+    
+    # Execute GUI:
+    os.system("python3 ../scripts/UserInterface.py")
  
     model_arg = DeclareLaunchArgument(name='model', description='Absolute path to robot urdf file')
     pkg_gazebo_ros = get_package_share_directory('gazebo_ros')
