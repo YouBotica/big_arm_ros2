@@ -120,6 +120,13 @@ def generate_launch_description():
         name='joints_service',
     )
 
+
+    user_interface_node = Node(
+        package='robot',
+        executable='user_interface_node',
+        name='user_interface_node',
+    )
+
      
     return LaunchDescription([
         RegisterEventHandler(
@@ -134,5 +141,6 @@ def generate_launch_description():
         gazebo,
         spawn, 
         joint_state_broadcaster_spawner,
-        get_joints_service   
+        get_joints_service,
+        user_interface_node
         ])

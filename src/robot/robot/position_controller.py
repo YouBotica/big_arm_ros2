@@ -36,14 +36,11 @@ class ControlActionClient(Node):
         self.actual_angles = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
 
 
-        self.cli = self.create_client(JointsNow, 'joints_now')
+        self.cli = self.create_client(JointsNow, 'joints_now') # Client service to get joint states whenever we need.
         while not self.cli.wait_for_service(timeout_sec=1.0):
             self.get_logger().info('service not available, waiting again...')
         
         self.req = JointsNow.Request()
-        # If initial poses were retrieved, destroy subscription
-        #self.subscription.destroy()
-
 
         qos_profile = QoSProfile(depth=10)
         self.publisher_ = self.create_publisher(Float64MultiArray, 'angle_publisher', 10)
@@ -52,10 +49,19 @@ class ControlActionClient(Node):
 
         self.got_initial_poses = False 
 
+        # When GUI Node calls this action server, it is going to execute the movement with the following parameters as inputs:
+        self.declare_parameter('Px', None)
+        self.declare_parameter('Py', None)
+        self.declare_parameter('Pz', None)
+
+        self.Px = self.get_parameter('Px').get_parameter_value().double_value
+        self.Py = self.get_parameter('Py').get_parameter_value().double_value
+        self.Pz = self.get_parameter('Pz').get_parameter_value().double_value
+        # --------------------------------------------------------------------------------------------------------------------
 
 
 
-    def send_cartesian_goal(self, actual_angles: list, Px: float, Py: float, Pz: float, grip: bool):
+    def send_cartesian_goal(self, actual_angles: list, Px: float, Py: float, Pz: float, grip: int):
 
         goal_msg = FollowJointTrajectory.Goal() #Type of message for the controller's goal
         # Fill in data for trajectory
@@ -80,14 +86,15 @@ class ControlActionClient(Node):
 
         point2.positions = [float(th1), float(th2), float(th3), float(th4), float(th5), 0.0, 0.0, 0.0, 0.0, 0.0]
 
-        point3 = JointTrajectoryPoint()
-        point3.time_from_start = Duration(seconds=8, nanoseconds=0).to_msg()
-        # Basic grip: -0.56 0.56 0.73 0.73
-        point3.positions = [float(th1), float(th2), float(th3), float(th4), float(th5), 0.0, -0.76, 0.76, 0.73, 0.73]
 
         points.append(point1)
         points.append(point2)
-        points.append(point3)
+        if (grip == 1):
+            point3 = JointTrajectoryPoint()
+            point3.time_from_start = Duration(seconds=8, nanoseconds=0).to_msg()
+            # Basic grip: -0.56 0.56 0.73 0.73
+            point3.positions = [float(th1), float(th2), float(th3), float(th4), float(th5), 0.0, -0.76, 0.76, 0.73, 0.73]
+            points.append(point3)
 
 
         goal_msg.goal_time_tolerance = Duration(seconds=5, nanoseconds=0).to_msg()
@@ -124,13 +131,8 @@ class ControlActionClient(Node):
 
     def feedback_callback(self, feedback_msg):
         feedback = feedback_msg.feedback
-        self.actual_angles = [float(feedback.actual.positions[0]), 
-            float(feedback.actual.positions[1]), float(feedback.actual.positions[2]), float(feedback.actual.positions[3]),
-            float(feedback.actual.positions[4]), float(feedback.actual.positions[5]),
-            float(feedback.actual.positions[6]), float(feedback.actual.positions[7]), # Gripper joints
-            float(feedback.actual.positions[8]), float(feedback.actual.positions[9]), # Gripper joints
-            ] 
-        
+        self.actual_angles = feedback.actual.positions
+
 
     def timer_callback(self):
         msg = Float64MultiArray()
@@ -182,17 +184,16 @@ class ControlActionClient(Node):
 def main(args=None):
     
     rclpy.init()
-    Px = float(input("Px"))
-    Py = float(input("Py"))
-    Pz = float(input("Pz"))
 
     action_client = ControlActionClient()
     response = action_client.send_request(enable=bool(sys.argv[0]))
 
     actual_angles = [response.th1, response.th2, response.th3, response.th4, response.th5, 
         response.th6, response.g2, response.g22, response.g4, response.g44]
+    
 
-    future = action_client.send_cartesian_goal(actual_angles=actual_angles, Px=Px, Py=Py, Pz=Pz, grip=True)
+    future = action_client.send_cartesian_goal(actual_angles=actual_angles, 
+        Px=action_client.Px, Py=action_client.Py, Pz=action_client.Pz, grip=1)
     rclpy.spin(action_client)
 
 
