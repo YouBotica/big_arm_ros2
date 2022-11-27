@@ -16,6 +16,8 @@ from ament_index_python.packages import get_package_share_directory
 from control_msgs.msg import JointTrajectoryControllerState
 from big_arm_interfaces.srv import JointsNow
 
+import numpy as np
+
 
 pkg_name = 'robot'
 file_location = get_package_share_directory(pkg_name)
@@ -53,15 +55,21 @@ class ControlActionClient(Node):
         self.declare_parameter('Px', None)
         self.declare_parameter('Py', None)
         self.declare_parameter('Pz', None)
+        self.declare_parameter('use_forward_kin', None)
+        self.declare_parameter('desired_angles', None)
 
         self.Px = self.get_parameter('Px').get_parameter_value().double_value
         self.Py = self.get_parameter('Py').get_parameter_value().double_value
         self.Pz = self.get_parameter('Pz').get_parameter_value().double_value
+        self.use_forward_kin = self.get_parameter('use_forward_kin').get_parameter_value().bool_value
+        self.desired_angles = np.asarray(self.get_parameter('desired_angles').get_parameter_value().double_array_value)
+
+        self.get_logger().info(f'frw: {self.use_forward_kin}')
         # --------------------------------------------------------------------------------------------------------------------
 
 
 
-    def send_cartesian_goal(self, actual_angles: list, Px: float, Py: float, Pz: float, grip: int):
+    def send_cartesian_goal(self, actual_angles: list, Px: float, Py: float, Pz: float, grip: int, desired_angles: list, use_forward_kin: bool):
 
         goal_msg = FollowJointTrajectory.Goal() #Type of message for the controller's goal
         # Fill in data for trajectory
@@ -78,17 +86,26 @@ class ControlActionClient(Node):
         point2 = JointTrajectoryPoint()
         point2.time_from_start = Duration(seconds=5, nanoseconds=0).to_msg()
 
-        desired_pos = [Px, Py, Pz] # Home: [0.3, 0.3, 0.8]
+        if (use_forward_kin): # Joint angle commands rather than goal x,y,z coordinates
+            #self.get_logger().info(f'desired: {desired_angles}')
+            th1, th2, th3, th4, th5, th6, thg1, thg2, thg3, thg4 = desired_angles # Unpack to prevent not declared variable error when calling error handling
+            point2.positions = [float(th1), float(th2), float(th3), float(th4), float(th5), float(th6), 0.0, 0.0, 0.0, 0.0]
 
-        th1, th2, th3, th4, th5 = compute_IK(Px = desired_pos[0], Py = desired_pos[1], Pz = desired_pos[2])
+        elif (not use_forward_kin): # Goal x,y,z coordinates, use Inverse Kinematics (IK)
+            desired_pos = [Px, Py, Pz] # Home: [0.3, 0.3, 0.8]
+            th1, th2, th3, th4, th5 = compute_IK(Px = desired_pos[0], Py = desired_pos[1], Pz = desired_pos[2])
+            point2.positions = [float(th1), float(th2), float(th3), float(th4), float(th5), 0.0, 0.0, 0.0, 0.0, 0.0]
 
+        else:
+            self.get_logger().info('ERROR: Unknown invalid configuration passed')
+            rclpy.shutdown()
+        
         self.error_handling(th1, th2, th3, th4, th5) # Look out for invalid joint configurations and op volume
-
-        point2.positions = [float(th1), float(th2), float(th3), float(th4), float(th5), 0.0, 0.0, 0.0, 0.0, 0.0]
-
+    
 
         points.append(point1)
         points.append(point2)
+
         if (grip == 1):
             point3 = JointTrajectoryPoint()
             point3.time_from_start = Duration(seconds=8, nanoseconds=0).to_msg()
@@ -193,7 +210,9 @@ def main(args=None):
     
 
     future = action_client.send_cartesian_goal(actual_angles=actual_angles, 
-        Px=action_client.Px, Py=action_client.Py, Pz=action_client.Pz, grip=1)
+        Px=action_client.Px, Py=action_client.Py, Pz=action_client.Pz, grip=1, # FIXME Change grip to input
+        desired_angles=action_client.desired_angles, use_forward_kin=action_client.use_forward_kin)
+        
     rclpy.spin(action_client)
 
 
